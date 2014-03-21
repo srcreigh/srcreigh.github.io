@@ -1,4 +1,5 @@
 ---
 template: index.jade
-title: My awesome blog
+title: My blog
+description: Foo bar
 ---

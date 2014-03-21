@@ -17,8 +17,7 @@ Metalsmith(__dirname)
     .use(markdown())
 
     // Use the title as permalinks
-    // TODO: Include year / month year in permalink?
-    .use(permalinks(':title'))
+    .use(permalinks(':url'))
 
     // Jade templating (for html)
     .use(templates({

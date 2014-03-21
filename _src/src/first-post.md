@@ -1,5 +1,6 @@
 ---
-title: My First Post (version two!)
+title: My First Post
+url: My First Post
 date: 2012-08-20
 template: post.jade
 ---
