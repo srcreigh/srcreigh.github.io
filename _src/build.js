@@ -1,34 +1,34 @@
 
-var Metalsmith = require('metalsmith');
-var templates = require('metalsmith-templates');
-var permalinks = require('metalsmith-permalinks');
-var markdown = require('metalsmith-markdown');
-var less = require('metalsmith-less');
-
-var srcDir = 'src';
-var destDir = '..';
+// Imports
+var Metalsmith = require("metalsmith");
+var markdown = require("metalsmith-markdown");
+var permalinks = require("metalsmith-permalinks");
+var templates = require("metalsmith-templates");
+var less = require("metalsmith-less");
 
 Metalsmith(__dirname)
-    // Set source and destination directories
-    .source(srcDir)
-    .destination(destDir)
+    // Add global metadata
+    .metadata({
+        "title": "My Blog",
+        "description": "My second, super-cool blog."
+    })
 
-    // Compile the blog with markdown
+    // Sets the source and destination directories
+    .source("src")
+    .destination("..")
+
+    // Apply middleware
+    /*.use(less({
+        "consume": false
+    })) */
     .use(markdown())
-
-    // Use the title as permalinks
-    .use(permalinks(':url'))
-
-    // Jade templating (for html)
+    .use(permalinks(":title"))
     .use(templates({
-      'engine': 'jade',
-      'directory': 'templates'
+        "engine": "jade",
+        "directory": "templates"
     }))
 
-    // Less templating (for css)
-    .use(less())
-
+    // Build the files to the destination directory
     .build(function(err) {
-      if (err) throw err;
-      else console.log('Built successfully to \'' + destDir + '\'.');
+        if (err) throw err;
     });
