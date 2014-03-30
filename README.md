@@ -7,11 +7,8 @@ All rights reserved.
 ## Building srcreigh.github.io
 
 ### Initial setup
-1. Pull and run ```npm install```
-2. Edit the dependencies of metalsmith-templates to include the latest version
-   of jade
-3. Run ```npm install``` in the metalsmith-templates directory
+1. ```_src/setup.sh```
 
 ### Build instructions
-1. Run ```node _src/build.js```
+1. ```node _src/build.js```
 
