@@ -1,16 +1,17 @@
 
 // Imports
-var Metalsmith = require("metalsmith");
-var markdown = require("metalsmith-markdown");
-var permalinks = require("metalsmith-permalinks");
-var templates = require("metalsmith-templates");
-var less = require("metalsmith-less");
+var Metalsmith = require('metalsmith');
+var markdown = require('metalsmith-markdown');
+var permalinks = require('metalsmith-permalinks');
+var templates = require('metalsmith-templates');
+var less = require('metalsmith-less');
+var cleanscript = require('metalsmith-cleanscript');
 
 Metalsmith(__dirname)
     // Add global metadata
     .metadata({
-        "title": "My Blog",
-        "description": "My second, super-cool blog."
+        'title': 'My Blog',
+        'description': 'My second, super-cool blog.'
     })
 
     // Sets the source and destination directories
@@ -22,10 +23,14 @@ Metalsmith(__dirname)
         "consume": false
     })) */
     .use(markdown())
-    .use(permalinks(":title"))
+    .use(permalinks(':title'))
     .use(templates({
-        "engine": "jade",
-        "directory": "templates"
+        'engine': 'jade',
+        'directory': 'templates'
+    }))
+    .use(cleanscript({
+        'root': false,
+        'out': '_clean.sh'
     }))
 
     // Build the files to the destination directory
