@@ -1,0 +1,9 @@
+
+#sidebar
+  h1
+    a(href='#{global.url}') #{global.title}
+
+  ul
+    for item in sidebar.items
+      li 
+        a(href='#{item.url}') #{item.title}

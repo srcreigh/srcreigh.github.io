@@ -18,6 +18,6 @@ npm install jade --save
 # Add my metalsmith-less repo
 cd $WORKING_DIR
 cd node_modules/
-git clone git@github.com:srcreigh/metalsmith-less.git
+git clone https://github.com/srcreigh/metalsmith-less.git
 cd metalsmith-less/
 npm install

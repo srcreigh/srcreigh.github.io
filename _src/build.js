@@ -8,32 +8,61 @@ var less = require('metalsmith-less');
 var cleanscript = require('metalsmith-cleanscript');
 
 Metalsmith(__dirname)
-    // Add global metadata
-    .metadata({
-        'title': 'My Blog',
-        'description': 'My second, super-cool blog.'
-    })
+  // Add global metadata
+  .metadata({
+    global: {
+      title: '/src/reigh',
+      description: 'Shane Creighton-Young\'s website.',
+      url: 'http://srcreigh.github.io',
 
-    // Sets the source and destination directories
-    .source("src")
-    .destination("..")
+      bio: {
+        name: 'Shane Creighton-Young',
+        purpose: 'CS \'17 at UWaterloo. Freelance mobile developer.'
+      }
+    },
 
-    // Apply middleware
-    /*.use(less({
-        "consume": false
-    })) */
-    .use(markdown())
-    .use(permalinks(':title'))
-    .use(templates({
-        'engine': 'jade',
-        'directory': 'templates'
-    }))
-    .use(cleanscript({
-        'root': false,
-        'out': '_clean.sh'
-    }))
+    // Sidebar items
+    sidebar: {
+      items: [
+        { title: 'blog',
+          url: 'http://facebook.com'
+        },
+        { title: 'hire',
+          url: 'http://twitter.com'
+        },
+        { title: 'projects',
+          url: 'http://myspace.com'
+        },
+        { title: 'source',
+          url: 'http://github.com/srcreigh/srcreigh.github.io'
+        }
+      ]  
+    }
+  })
 
-    // Build the files to the destination directory
-    .build(function(err) {
-        if (err) throw err;
-    });
+  // Sets the source and destination directories
+  .source("src")
+  .destination("..")
+
+  // Apply middleware
+  .use(less({
+    consume: true
+  }))
+  .use(markdown())
+  .use(permalinks({
+    pattern: ':title',
+    relative: false
+  }))
+  .use(templates({
+    engine: 'jade',
+    directory: 'templates'
+  }))
+  .use(cleanscript({
+    root: false,
+    out: 'clean.sh'
+  }))
+
+  // Build the files to the destination directory
+  .build(function(err) {
+    if (err) throw err;
+  });

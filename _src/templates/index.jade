@@ -1,8 +1,13 @@
-html
-   head
-      title #{title}
-      meta(name='description', content='#{description}')
 
-   body
-      h1 #{title}
-      p #{description}
+html
+  head
+    title #{global.title}
+    include includes/fonts.jade
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/main.css')
+
+  body
+    #holder
+      #content !{contents}
+        //- sidebar div
+        include includes/sidebar.jade

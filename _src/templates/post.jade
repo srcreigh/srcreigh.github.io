@@ -1,11 +1,19 @@
 
 html
-   head
-      title My Blog
+  head
+    title #{global.title} - #{title}
+    include includes/fonts.jade
+    link(rel='stylesheet', type='text/css', href='../css/reset.css')
+    link(rel='stylesheet', type='text/css', href='../css/main.css')
 
-   body
-      h1 #{title}
+  body
+    #holder
 
-      //- `!=' tells jade to not escape the markdown contents
-      p!= contents
+      //- !{...} doesn't escape the contents of the variable
+      #content !{contents}
+
+        //- sidebar div
+        include includes/sidebar.jade
+
+
 

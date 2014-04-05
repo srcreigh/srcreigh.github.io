@@ -1,0 +1,131 @@
+
+/* set this to true to get some borders */
+@debug: 0;
+
+/* styles constants */
+@background-color: lighten(#EDF7FF, 25%);
+@main-color: lighten(#107FC9, 10%);
+@dark-color: #025D8C;
+@light-color: darken(#EDF7FF, 10%);
+@text-color: black;
+
+@link-color: @main-color;
+@link-visited-color: @dark-color;
+
+/* container positioning constants */
+@sidebar-width: 300px;
+@sidebar-border-width: 1px;
+@sidebar-inside-margin: 20px;
+@sidebar-inside-padding: @sidebar-inside-margin;
+
+@content-width: 600px;
+@content-border-width: 1px;
+@content-margin-top: 20px;
+
+/* the sidebar and the content should both have a padding so that
+   the divider pokes up a bit */
+@padding-top: 14px;
+
+/* border mixin --- will add a border style when @debug is true */
+.border(@width, @color) when (@debug) {
+    border: @width dotted @color;
+}
+
+/* main styles */
+body { 
+    background-color: @background-color; 
+    color: @text-color;
+}
+
+/* text styles */
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.1em; }
+#sidebar ul li {
+    display: inline;
+    float: right;
+    clear: right;
+    width: @sidebar-width / 3;
+    a { 
+        font-size: 1.3em; 
+    }
+}
+#sidebar ul li, ul li a {
+    padding: 5px;
+}
+
+/* text colors */
+p a:link { color: @main-color; }
+p a:visited { color: @dark-color; }
+#sidebar {
+    a { text-decoration: none; }
+    h1 a, a:link, a:visited { color: @text-color; }
+    ul li {
+        background-color: @light-color;
+        a, a:link, a:visited {
+            color: @text-color;
+            .here {
+                color: white;
+            }
+        }
+    }
+}
+
+
+/* font styles */
+#sidebar h1, p, a, h1, h2, h3, h4 {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+p {
+    line-height: 120%;
+}
+#sidebar { text-align: right; }
+p        { text-align: justify; }
+
+/* spacing styles */
+h2, h3, h4 { margin-top: 20px; }
+p          { margin-top: 10px; }
+#sidebar li { margin-top: 10px; }
+#sidebar ul { margin-top: 5px; }
+
+/* container positioning */
+#holder {
+    position: relative;
+    width: @content-width;
+    margin: 0px auto;
+    margin-top: @content-margin-top;
+
+    .border(@content-border-width, red);
+}
+
+#content {
+    padding-top: @padding-top;
+}
+
+
+#sidebar {
+    position: absolute;
+    width: @sidebar-width;
+
+    /* this sidebar will be vertically displaced by the width
+       of the content's border without this */
+    top: -(@content-border-width);
+
+    /* align the sidebar with the left side of the content */
+    right: @content-width + @content-border-width;
+
+    /* put some margin, padding inside with a separator */
+    margin-right: @sidebar-inside-margin;
+    padding-right: @sidebar-inside-padding;
+    border-right: 1px @light-color solid;
+    /* extend the separator a bit at the top and bottom */
+    padding-top: @padding-top;
+    padding-bottom: 20px;
+
+    .border(@sidebar-border-width, blue);
+}
+
