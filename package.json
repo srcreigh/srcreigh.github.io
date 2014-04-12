@@ -11,6 +11,7 @@
     "jade": "~1.3.1"
   },
   "scripts": {
-    "build": "nodejs ./build.js"
+    "build": "nodejs ./build.js",
+    "deploy": "npm run build && cd ./build && git init . && git add -A && git commit -m \"Deploy `date`\" && git push 'https://github.com/srcreigh/srcreigh.github.io.git' master --force && rm -rf .git && cd .."
   }
 }
