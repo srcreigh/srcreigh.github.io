@@ -5,7 +5,7 @@ var markdown = require('metalsmith-markdown');
 var permalinks = require('metalsmith-permalinks');
 var templates = require('metalsmith-templates');
 var less = require('metalsmith-less');
-var cleanscript = require('metalsmith-cleanscript');
+var ignore = require('metalsmith-ignore');
 
 Metalsmith(__dirname)
   // Add global metadata
@@ -17,7 +17,7 @@ Metalsmith(__dirname)
 
       bio: {
         name: 'Shane Creighton-Young',
-        purpose: 'CS \'17 at UWaterloo. Freelance mobile developer.'
+        purpose: 'CS \'17 at UWaterloo. Mobile developer.'
       }
     },
 
@@ -40,14 +40,14 @@ Metalsmith(__dirname)
     }
   })
 
-  // Sets the source and destination directories
-  .source("src")
-  .destination("..")
+  // Default directories:
+  // source: ./src
+  // dest:   ./build
 
   // Apply middleware
-  .use(less({
-    consume: true
-  }))
+  .use(less())
+  .use(ignore('*.less'))
+
   .use(markdown())
   .use(permalinks({
     pattern: ':title',
@@ -56,10 +56,6 @@ Metalsmith(__dirname)
   .use(templates({
     engine: 'jade',
     directory: 'templates'
-  }))
-  .use(cleanscript({
-    root: false,
-    out: 'clean.sh'
   }))
 
   // Build the files to the destination directory
