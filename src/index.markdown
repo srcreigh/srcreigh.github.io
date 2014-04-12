@@ -10,9 +10,8 @@ experience on Android and iOS from an 8-month internship at
 [Gestice](http://gestice.org).
 
 ## Hire
-I'm open for hire as a part-time remote developer or as a part-time freelance 
-Android application developer. See my 
-[hire page](http://srcreigh.github.io/hire/) for more information.
+I'm open for hire as a part-time or freelance mobile developer. See my 
+[hire page](/hire/) for more information.
 
 ## Blog
 Nothing's there yet. Though, I plan to write about various things: Tricky steps

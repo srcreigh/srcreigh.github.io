@@ -1,7 +1,4 @@
 
-/* set this to true to get some borders */
-@debug: 0;
-
 /* styles constants */
 @background-color: lighten(#EDF7FF, 25%);
 @main-color: lighten(#107FC9, 10%);
@@ -26,11 +23,6 @@
    the divider pokes up a bit */
 @padding-top: 14px;
 
-/* border mixin --- will add a border style when @debug is true */
-.border(@width, @color) when (@debug) {
-    border: @width dotted @color;
-}
-
 /* main styles */
 body { 
     background-color: @background-color; 
@@ -46,7 +38,7 @@ h4 { font-size: 1.1em; }
     display: inline;
     float: right;
     clear: right;
-    width: @sidebar-width / 3;
+    width: @sidebar-width / 2;
     a { 
         font-size: 1.3em; 
     }
@@ -61,30 +53,38 @@ p a:visited { color: @dark-color; }
 #sidebar {
     a { text-decoration: none; }
     h1 a, a:link, a:visited { color: @text-color; }
-    ul li {
+    ul li.here {
         background-color: @light-color;
+    }
+    ul li {
         a, a:link, a:visited {
             color: @text-color;
-            .here {
-                color: white;
-            }
         }
     }
 }
 
 
 /* font styles */
-#sidebar h1, p, a, h1, h2, h3, h4 {
+#content {
+    p, a {
+        font-family: 'PT Serif', 'Georgia', serif;
+    }
+}
+#content #sidebar {
+    h1, a {
+        font-family: 'Open Sans', 'Arial', sans-serif;
+    }
+}
+h1, h2, h3, h4 {
     font-family: 'Open Sans', 'Arial', sans-serif;
 }
 h1, h2, h3, h4 {
     font-weight: bold;
 }
 p {
-    line-height: 120%;
+    line-height: 140%;
 }
 #sidebar { text-align: right; }
-p        { text-align: justify; }
 
 /* spacing styles */
 h2, h3, h4 { margin-top: 20px; }
@@ -98,8 +98,6 @@ p          { margin-top: 10px; }
     width: @content-width;
     margin: 0px auto;
     margin-top: @content-margin-top;
-
-    .border(@content-border-width, red);
 }
 
 #content {
@@ -125,7 +123,5 @@ p          { margin-top: 10px; }
     /* extend the separator a bit at the top and bottom */
     padding-top: @padding-top;
     padding-bottom: 20px;
-
-    .border(@sidebar-border-width, blue);
 }
 

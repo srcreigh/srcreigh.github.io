@@ -6,47 +6,49 @@ var permalinks = require('metalsmith-permalinks');
 var templates = require('metalsmith-templates');
 var less = require('metalsmith-less');
 var ignore = require('metalsmith-ignore');
+var metadata = require('metalsmith-metadata');
+var give = require('metalsmith-give');
 
 Metalsmith(__dirname)
-  // Add global metadata
-  .metadata({
-    global: {
-      title: '/src/reigh',
-      description: 'Shane Creighton-Young\'s website.',
-      url: 'http://srcreigh.github.io',
-
-      bio: {
-        name: 'Shane Creighton-Young',
-        purpose: 'CS \'17 at UWaterloo. Mobile developer.'
-      }
-    },
-
-    // Sidebar items
-    sidebar: {
-      items: [
-        { title: 'blog',
-          url: 'http://facebook.com'
-        },
-        { title: 'hire',
-          url: 'http://twitter.com'
-        },
-        { title: 'projects',
-          url: 'http://myspace.com'
-        },
-        { title: 'source',
-          url: 'http://github.com/srcreigh/srcreigh.github.io'
-        }
-      ]  
-    }
-  })
 
   // Default directories:
   // source: ./src
   // dest:   ./build
 
   // Apply middleware
-  .use(less())
-  .use(ignore('*.less'))
+
+  // Metadata
+  .use(metadata({
+    global: "metadata/global.json",
+    sidebar: "metadata/sidebar.json"
+  }))
+  .use(give({
+    options: {
+      matchBase: true
+    },
+    'blog/*': {
+      here: 'blog'
+    },
+    'hire/*': {
+      here: 'hire'
+    },
+    'projects/*': {
+      here: 'projects'
+    },
+
+  }))
+
+  .use(less({
+    render: {
+      compress: true
+    }
+  }))
+  .use(ignore({
+    patterns: '*.less',
+    options: {
+      matchBase: true
+    }
+  }))
 
   .use(markdown())
   .use(permalinks({
@@ -58,7 +60,51 @@ Metalsmith(__dirname)
     directory: 'templates'
   }))
 
+  .use(ignore({
+    patterns: '*.swp',
+    options: {
+      matchBase: true,
+      dot: true
+    }
+  }))
+
+  .use(log())
+
   // Build the files to the destination directory
   .build(function(err) {
     if (err) throw err;
   });
+
+function log() {
+  return function(files, metalsmith, done) {
+    console.log('files');
+    console.log(JSON.stringify(files, function(k,v) {
+      if (k == 'contents') return k;
+      else return v;
+    }, 3));
+
+    console.log('metadata');
+    console.log(JSON.stringify(metalsmith.metadata(), function(k,v) {
+      if (k == 'contents') return k;
+      else return v;
+    }, 3));
+    return done();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

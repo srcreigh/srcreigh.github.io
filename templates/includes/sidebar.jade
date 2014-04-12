@@ -5,5 +5,9 @@
 
   ul
     for item in sidebar.items
-      li 
-        a(href='#{item.url}') #{item.title}
+      if(item.title == here)
+        li.here
+          a(href='#{item.url}') #{item.title}
+      else 
+        li 
+          a(href='#{item.url}') #{item.title}
