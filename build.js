@@ -68,7 +68,7 @@ Metalsmith(__dirname)
     }
   }))
 
-  .use(log())
+  //.use(log())
 
   // Build the files to the destination directory
   .build(function(err) {
