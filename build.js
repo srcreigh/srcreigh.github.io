@@ -8,6 +8,7 @@ var less = require('metalsmith-less');
 var ignore = require('metalsmith-ignore');
 var metadata = require('metalsmith-metadata');
 var give = require('metalsmith-give');
+var excerpts = require('metalsmith-excerpts');
 
 Metalsmith(__dirname)
 
@@ -16,6 +17,15 @@ Metalsmith(__dirname)
   // dest:   ./build
 
   // Apply middleware
+
+  // ignore *.swp files in the build
+  .use(ignore({
+    patterns: '*.swp',
+    options: {
+      matchBase: true,
+      dot: true
+    }
+  }))
 
   // Metadata
   .use(metadata({
@@ -38,6 +48,7 @@ Metalsmith(__dirname)
 
   }))
 
+  // Compile less and remove the source code from the build
   .use(less({
     render: {
       compress: true
@@ -50,6 +61,8 @@ Metalsmith(__dirname)
     }
   }))
 
+  // Get excerpts from markdown posts
+  .use(excerpts())
   .use(markdown())
   .use(permalinks({
     pattern: ':path/:title',
@@ -61,15 +74,7 @@ Metalsmith(__dirname)
     directory: 'templates'
   }))
 
-  .use(ignore({
-    patterns: '*.swp',
-    options: {
-      matchBase: true,
-      dot: true
-    }
-  }))
-
-  //.use(log())
+  .use(log())
 
   // Build the files to the destination directory
   .build(function(err) {
@@ -101,20 +106,4 @@ function log(opts) {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
