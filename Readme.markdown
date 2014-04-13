@@ -1,5 +1,7 @@
 # /src/reigh
-Source code and current build for my website and it's articles.
+[Source code](http://github.com/srcreigh/srcreigh.github.io/tree/source) 
+and [current build](http://github.com/srcreigh/srcreigh.github.io)
+for my website and it's articles.
 
 Copyright (C) Shane Creighton-Young 2014 except where otherwise noted.
 All rights reserved.
