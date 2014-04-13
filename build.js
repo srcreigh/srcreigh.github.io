@@ -52,9 +52,10 @@ Metalsmith(__dirname)
 
   .use(markdown())
   .use(permalinks({
-    pattern: ':title',
+    pattern: ':path/:title',
     relative: false
   }))
+
   .use(templates({
     engine: 'jade',
     directory: 'templates'
@@ -75,20 +76,29 @@ Metalsmith(__dirname)
     if (err) throw err;
   });
 
-function log() {
-  return function(files, metalsmith, done) {
-    console.log('files');
-    console.log(JSON.stringify(files, function(k,v) {
-      if (k == 'contents') return k;
-      else return v;
-    }, 3));
+function log(opts) {
+  
+  opts = opts || {};
+  opts.files = opts.hasOwnProperty('files') || true;
+  opts.metadata = opts.hasOwnProperty('metadata') || false;
 
-    console.log('metadata');
-    console.log(JSON.stringify(metalsmith.metadata(), function(k,v) {
-      if (k == 'contents') return k;
-      else return v;
-    }, 3));
-    return done();
+  return function(files, metalsmith, done) {
+    if (opts.files) {
+      console.log('files');
+      console.log(JSON.stringify(files, function(k,v) {
+        if (k == 'contents') return k;
+        else return v;
+      }, 3));
+    }
+
+    if (opts.metadata) {
+      console.log('metadata');
+      console.log(JSON.stringify(metalsmith.metadata(), function(k,v) {
+        if (k == 'contents') return k;
+        else return v;
+      }, 3));
+      return done();
+    }
   }
 }
 
