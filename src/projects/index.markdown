@@ -5,7 +5,7 @@ title: Projects
 
 # Projects
 
-### Gestice
+## Gestice
 <p><div class="video-container"><iframe width="560" height="315" src="//www.youtube.com/embed/gHsk7c2VLpc" frameborder="0" allowfullscreen></iframe></div></p>
 
 [Gestice](http://gestice.org) is a fun and secure way to unlock your phone and
@@ -18,7 +18,7 @@ unlock it!
 
 
 
-### Lockr
+## Lockr
 
 Developed at HackMIT 2014, Lockr is an Android application that helps keep
 your phone secure when you need it to be. After setting it up with places where
