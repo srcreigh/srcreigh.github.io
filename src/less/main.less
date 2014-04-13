@@ -1,5 +1,5 @@
 
-/* styles constants */
+/* colors */
 @background-color: lighten(#EDF7FF, 25%);
 @main-color: lighten(#107FC9, 10%);
 @dark-color: #025D8C;
@@ -9,9 +9,8 @@
 @link-color: @main-color;
 @link-visited-color: @dark-color;
 
-/* container positioning constants */
+/* positioning constants */
 @sidebar-width: 300px;
-@sidebar-border-width: 1px;
 @sidebar-inside-margin: 20px;
 @sidebar-inside-padding: @sidebar-inside-margin;
 
@@ -23,105 +22,111 @@
    the divider pokes up a bit */
 @padding-top: 14px;
 
-/* main styles */
-body { 
-    background-color: @background-color; 
-    color: @text-color;
-}
 
-/* text styles */
+/*
+ * TEXT STYLES
+ */
+#content {
+  p, a {
+    font-family: 'PT Serif', 'Georgia', serif;
+  }
+
+  #sidebar {
+    h1, a {
+      font-family: 'Open Sans', 'Arial', sans-serif;
+    }
+  }
+}
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: bold;
+}
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.2em; }
 h4 { font-size: 1.1em; }
-#sidebar ul li {
-    display: inline;
-    float: right;
-    clear: right;
-    width: @sidebar-width / 2;
-    a { 
-        font-size: 1.3em; 
-    }
-}
-#sidebar ul li, ul li a {
-    padding: 5px;
-}
+p { line-height: 140%; }
+#sidebar { text-align: right; }
+em { font-style: italic; }
 
-/* text colors */
+
+/*
+ * COLORS
+ */
+body {
+  background-color: @background-color; 
+  color: @text-color; 
+}
 p a:link { color: @main-color; }
 p a:visited { color: @dark-color; }
 #sidebar {
-    a { text-decoration: none; }
-    h1 a, a:link, a:visited { color: @text-color; }
-    ul li.here {
-        background-color: @light-color;
+  a { text-decoration: none; }
+  h1 {
+    a, a:link, a:visited { color: @text-color; }
+  }
+  ul li.here {
+    background-color: @light-color;
+  }
+  ul li {
+    a, a:link, a:visited {
+      color: @text-color;
     }
-    ul li {
-        a, a:link, a:visited {
-            color: @text-color;
-        }
-    }
+  }
 }
 
 
-/* font styles */
-#content {
-    p, a {
-        font-family: 'PT Serif', 'Georgia', serif;
-    }
-}
-#content #sidebar {
-    h1, a {
-        font-family: 'Open Sans', 'Arial', sans-serif;
-    }
-}
-h1, h2, h3, h4 {
-    font-family: 'Open Sans', 'Arial', sans-serif;
-}
-h1, h2, h3, h4 {
-    font-weight: bold;
-}
-p {
-    line-height: 140%;
-}
-#sidebar { text-align: right; }
-
-/* spacing styles */
+/*
+ * PARAGRAPH SPACING
+ */
 h2, h3, h4 { margin-top: 20px; }
 p          { margin-top: 10px; }
 #sidebar li { margin-top: 10px; }
 #sidebar ul { margin-top: 5px; }
 
-/* container positioning */
+
+
+/*
+ * CONTAINER POSITIONING
+ */
 #holder {
-    position: relative;
-    width: @content-width;
-    margin: 0px auto;
-    margin-top: @content-margin-top;
+  position: relative;
+  width: @content-width;
+  margin: 0px auto;
+  margin-top: @content-margin-top;
 }
-
 #content {
-    padding-top: @padding-top;
+  padding-top: @padding-top;
 }
-
-
 #sidebar {
-    position: absolute;
-    width: @sidebar-width;
+  position: absolute;
+  width: @sidebar-width;
 
-    /* this sidebar will be vertically displaced by the width
-       of the content's border without this */
-    top: -(@content-border-width);
+  /* this sidebar will be vertically displaced by the width
+     of the content's border without this */
+  top: -(@content-border-width);
 
-    /* align the sidebar with the left side of the content */
-    right: @content-width + @content-border-width;
+  /* align the sidebar with the left side of the content */
+  right: @content-width + @content-border-width;
 
-    /* put some margin, padding inside with a separator */
-    margin-right: @sidebar-inside-margin;
-    padding-right: @sidebar-inside-padding;
-    border-right: 1px @light-color solid;
-    /* extend the separator a bit at the top and bottom */
-    padding-top: @padding-top;
-    padding-bottom: 20px;
+  /* put some margin, padding inside with a separator */
+  margin-right: @sidebar-inside-margin;
+  padding-right: @sidebar-inside-padding;
+  border-right: 1px @light-color solid;
+  /* extend the separator a bit at the top and bottom */
+  padding-top: @padding-top;
+  padding-bottom: 20px;
+
+  ul li {
+    display: inline;
+    float: right;
+    clear: right;
+    width: @sidebar-width / 2;
+
+    padding: 5px;
+    a { 
+      font-size: 1.3em; 
+      padding: 5px;
+    }
+  }
 }
 
