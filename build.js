@@ -9,6 +9,7 @@ var ignore = require('metalsmith-ignore');
 var metadata = require('metalsmith-metadata');
 var give = require('metalsmith-give');
 var excerpts = require('metalsmith-excerpts');
+var collections = require('metalsmith-collections');
 
 Metalsmith(__dirname)
 
@@ -61,8 +62,15 @@ Metalsmith(__dirname)
     }
   }))
 
-  // Get excerpts from markdown posts
+  // Get excerpts from markdown posts and create a posts collection
   .use(excerpts())
+  .use(collections({
+    posts: {
+      pattern: 'blog/posts/**/*.markdown',
+      sortBy: 'date'
+    }
+  }))
+
   .use(markdown())
   .use(permalinks({
     pattern: ':path/:title',
@@ -74,15 +82,15 @@ Metalsmith(__dirname)
     directory: 'templates'
   }))
 
-  .use(log())
-
   // Build the files to the destination directory
   .build(function(err) {
     if (err) throw err;
   });
 
+
+
+
 function log(opts) {
-  
   opts = opts || {};
   opts.files = opts.hasOwnProperty('files') || true;
   opts.metadata = opts.hasOwnProperty('metadata') || false;
@@ -90,19 +98,22 @@ function log(opts) {
   return function(files, metalsmith, done) {
     if (opts.files) {
       console.log('files');
+
+      // note: file metadata are circular, so don't print out 'next' or 'previous'
       console.log(JSON.stringify(files, function(k,v) {
-        if (k == 'contents') return k;
+        if (k == 'contents' || k == 'next' || k == 'previous') return k;
         else return v;
       }, 3));
     }
 
     if (opts.metadata) {
       console.log('metadata');
+      
+      // note: metadata is circular, so don't print out 'next' or 'previous'
       console.log(JSON.stringify(metalsmith.metadata(), function(k,v) {
-        if (k == 'contents') return k;
+        if (k == 'contents' || k == 'next' || k == 'previous') return k;
         else return v;
       }, 3));
-      return done();
     }
   }
 }

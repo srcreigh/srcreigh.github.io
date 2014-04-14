@@ -58,6 +58,24 @@ h4 { font-size: 1.1em; }
 p, p a { line-height: 140%; }
 #sidebar { text-align: right; }
 em { font-style: italic; }
+#sidebar {
+  a { text-decoration: none; }
+  h1, ul li {
+    a, a:link, a:visited { color: @text-color; }
+  }
+}
+#blog {
+  h1, h2, h3, h4, h5, h6 {
+    a, a:link, a:visited {
+      font-family: 'Open Sans', 'Arial', sans-serif;
+      text-decoration: none;
+      color: @text-color;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
 
 
 /*
@@ -69,14 +87,8 @@ body {
 }
 a:link { color: @main-color; }
 a:visited { color: @dark-color; }
-#sidebar {
-  a { text-decoration: none; }
-  h1, ul li {
-    a, a:link, a:visited { color: @text-color; }
-  }
-  ul li.here {
-    background-color: @light-color;
-  }
+#sidebar ul li.here {
+  background-color: @light-color;
 }
 
 
@@ -87,6 +99,8 @@ h2, h3, h4 { margin-top: 20px; }
 h1 { margin-top: 20px; }
 /* why does this work lol? h1 doesn't have children... oh well */
 h1:first-child { margin-top: 0px;  }
+/* on the blog with the list of pages, don't have top-margin on the first h2 */
+#blog h2:first-child { margin-top: 0px; }
 p { margin-top: 10px; }
 ul { 
   margin-top: 20px; 

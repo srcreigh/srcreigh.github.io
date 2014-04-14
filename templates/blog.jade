@@ -1,0 +1,26 @@
+
+html
+  head
+    if(title)
+      title #{global.title} - #{title}
+    else
+      title #{global.title}
+
+    include includes/fonts.jade
+    link(rel='stylesheet', type='text/css', href='/css/reset.css')
+    link(rel='stylesheet', type='text/css', href='/css/main.css')
+
+  body
+    #holder
+      #content
+
+        #blog
+          for post in posts
+            h2 
+              a(href='/#{post.path}') #{post.title}
+            p !{post.excerpt}
+
+        include includes/sidebar.jade
+
+
+
