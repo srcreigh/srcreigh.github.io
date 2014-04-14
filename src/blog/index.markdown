@@ -1,8 +1,8 @@
 ---
 template: post.jade
+title: Shane Creighton-Young's Blog
 ---
 
-# Shane Creighton-Young
 I am studying Computer Science at the University of Waterloo and I have a 
 passion for making things. I have gleaned extensive mobile development 
 experience on Android and iOS from an 8-month internship at 

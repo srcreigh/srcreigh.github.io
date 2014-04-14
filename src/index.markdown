@@ -1,17 +1,13 @@
 ---
 template: post.jade
+title: Shane Creighton-Young
 ---
 
-# Shane Creighton-Young
 I am studying Computer Science at the University of Waterloo and I have a 
 passion for making things. I have gleaned extensive mobile development 
 experience on Android and iOS from an 8-month internship at 
 [Relay](http://relay.im) and hackathon projects such as 
 [Gestice](http://gestice.org).
-
-## Hire
-I'm open for hire as a part-time or freelance mobile developer. See my 
-[hire page](/hire/) for more information.
 
 ## Blog
 Nothing's there yet. Though, I plan to write about various things: Tricky steps

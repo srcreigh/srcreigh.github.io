@@ -12,9 +12,11 @@ html
 
   body
     #holder
+      #content
+        h1 #{title}
 
-      //- !{...} doesn't escape the contents of the variable
-      #content !{contents}
+        //- !{...} doesn't escape the contents of the variable
+        span !{contents}
 
         //- sidebar div
         include includes/sidebar.jade
