@@ -12,15 +12,17 @@ html
     link(rel='stylesheet', type='text/css', href='/css/main.css')
 
   body
-    #holder
-      #content
-        h1 #{title}
-
-        //- !{...} doesn't escape the contents of the variable
-        span !{contents}
+    #outer-holder
+      #inner-holder
 
         //- sidebar div
         include includes/sidebar.jade
+
+        #content
+          h1 #{title}
+
+          //- !{...} doesn't escape the contents of the variable
+          span !{contents}
 
 
 

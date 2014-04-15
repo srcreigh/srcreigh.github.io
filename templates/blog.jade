@@ -12,15 +12,18 @@ html
     link(rel='stylesheet', type='text/css', href='/css/main.css')
 
   body
-    #holder
-      #content
-        #blog
-          for post in posts
-            h2 
-              a(href='/#{post.path}') #{post.title}
-            p !{post.excerpt}
+    #outer-holder
+      #inner-holder
 
+        //- sidebar div
         include includes/sidebar.jade
+
+        #content
+          #blog
+            for post in posts
+              h2 
+                a(href='/#{post.path}') #{post.title}
+              p !{post.excerpt}
 
 
 
