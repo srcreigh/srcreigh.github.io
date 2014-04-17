@@ -1,10 +1,12 @@
 
 /* colors */
-@background-color: lighten(#EDF7FF, 25%);
+@background-color: #FFFFFF;
 @main-color: lighten(#107FC9, 10%);
 @dark-color: #025D8C;
 @light-color: darken(#EDF7FF, 10%);
 @text-color: black;
+
+@gray1: #f6f6f6;
 
 @link-color: @main-color;
 @link-visited-color: @dark-color;
@@ -23,6 +25,13 @@
    the divider pokes up a bit */
 @padding-top: 14px;
 
+.serif() {
+  font-family: 'PT Serif', 'Georgia', serif;
+}
+
+.sans-serif() {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
 
 /*
  * SCROLLBAR FIX
@@ -40,10 +49,12 @@ html {
 body {
   background-color: @background-color; 
   color: @text-color; 
+
+  .serif();
 }
 
 p {
-  font-family: 'PT Serif', 'Georgia', serif;
+  .serif();
   line-height: 140%;
   margin-top: 10px;
 }
@@ -59,13 +70,29 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
 
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  .sans-serif();
   font-weight: bold;
 
   a, a:link, a:visited { color: @text-color; }
 }
 
 h1:first-child {
+  margin-top: 0;
+}
+
+blockquote {
+  border-left: 10px @light-color solid;
+  background: @gray1;
+
+  margin-top: 10px;
+  padding: 10px 0 10px 15px;
+}
+
+blockquote > p:first-child {
+  margin-top: 0;
+}
+
+p > blockquote:first-child {
   margin-top: 0;
 }
 
@@ -85,7 +112,7 @@ em { font-style: italic; }
   a:hover { text-decoration: none; }
   h1 a:hover { text-decoration: underline; }
 
-  a { font-family: 'Open Sans', 'Arial', sans-serif; }
+  a { .sans-serif(); }
   a, a:link, a:visited { color: @text-color; }
 
   .here {
