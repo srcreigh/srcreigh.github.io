@@ -37,13 +37,13 @@ Metalsmith(__dirname)
     options: {
       matchBase: true
     },
-    'blog/*': {
+    'blog/**': {
       here: 'blog'
     },
-    'hire/*': {
+    'hire/**': {
       here: 'hire'
     },
-    'projects/*': {
+    'projects/**': {
       here: 'projects'
     },
 
