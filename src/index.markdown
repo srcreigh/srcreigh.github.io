@@ -10,7 +10,7 @@ experience on Android and iOS from an 8-month internship at
 [Gestice](http://gestice.org).
 
 ## Blog
-Nothing's there yet. Though, I plan to write about various things: Tricky steps
+Nothing's there yet, though I plan to write about various things: Tricky steps
 in learning new tech, perspectives I can provide on new tech, and any fun technical
 challenges I've (perhaps not) overcome in my projects.
 
