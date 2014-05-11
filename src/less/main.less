@@ -27,6 +27,21 @@
 
 @full-size: (@sidebar-width * 2 + @inner-holder-width);
 
+.word-wrap() {
+  white-space: pre;           /* CSS 2.0 */
+  white-space: pre-wrap;      /* CSS 2.1 */
+  white-space: pre-line;      /* CSS 3.0 */
+  white-space: -pre-wrap;     /* Opera 4-6 */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap;  /* HP Printers */
+  word-wrap: break-word;      /* IE 5+ */
+}
+
+.monospace() {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
 .serif() {
   font-family: 'PT Serif', 'Georgia', serif;
 }
@@ -61,6 +76,29 @@ p {
   margin-top: 10px;
 }
 
+code {
+  .monospace();
+}
+
+
+pre {
+  line-height: 110%;
+  margin-top: 10px;
+
+  background: #eee;
+  code {
+    color: @text-color;
+    font-size: 90%;
+  }
+
+  padding: 10px;
+  border-radius: 10px;
+
+  overflow-x: scroll;
+  white-space: pre;
+  word-wrap: normal;
+}
+
 a, a:visited {
   text-decoration: none;
 }
@@ -87,7 +125,7 @@ blockquote {
   background: @gray1;
 
   margin-top: 10px;
-  padding: 10px 0 10px 15px;
+  padding: 10px 15px 10px 15px;
 }
 
 blockquote > p:first-child {
@@ -128,6 +166,10 @@ em { font-style: italic; }
 
 #content {
   margin-bottom: 40px;
+  
+  a {
+    .word-wrap();
+  }
 }
 
 
