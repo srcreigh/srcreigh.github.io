@@ -10,6 +10,7 @@ var metadata = require('metalsmith-metadata');
 var give = require('metalsmith-give');
 var excerpts = require('metalsmith-excerpts');
 var collections = require('metalsmith-collections');
+var highlightjs = require('highlight.js');
 
 Metalsmith(__dirname)
 
@@ -66,12 +67,21 @@ Metalsmith(__dirname)
   .use(excerpts())
   .use(collections({
     posts: {
-      pattern: 'blog/posts/**/*.markdown',
-      sortBy: 'date'
+      pattern: 'blog/**/*.markdown',
+      sortBy: 'date',
+      reverse: true
     }
   }))
 
-  .use(markdown())
+  .use(markdown({
+    highlight: function(code, lang){
+      if (lang != 'objectivec') {
+        console.log('can\'t print lang for code ' + code);
+        return code;
+      }
+      return highlightjs.highlight(lang, code).value;
+    }
+  }))
   .use(permalinks({
     pattern: ':path/:title',
     relative: false

@@ -11,6 +11,8 @@ html
     include includes/analytics.html
 
     include includes/fonts.jade
+    include includes/highlightjs.jade
+
     link(rel='stylesheet', type='text/css', href='/css/reset.css')
     link(rel='stylesheet', type='text/css', href='/css/main.css')
 
@@ -24,8 +26,8 @@ html
         #content
           h1 #{title}
 
+          #preamble 
+            p !{preamble}
+
           //- !{...} doesn't escape the contents of the variable
           span !{contents}
-
-
-

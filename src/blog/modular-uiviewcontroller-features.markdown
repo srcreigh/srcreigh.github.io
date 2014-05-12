@@ -1,10 +1,24 @@
 ---
-title: Modular UIViewController Implementations
+title: Modular UIViewController Features
 date: 2014-05-11
 template: post.jade
+preamble: > 
+    This article is an edited version of a University of Waterloo work term
+    report, &#8220;Modular UIViewController Implementations&#8221; for 
+    <a href='http://relay.im'>Endemic Mobile Inc.</a>, where I interned
+    from September 2013&ndash;April 2014. Thank you to the Endemic team for 
+    everything I learned about maintainability and native mobile development
+    in those 8 months.
 ---
 
-Modular code is very important when writing maintainable software. Dave Thomas, 
+In iOS mobile applications, `UIViewController` subclasses are often
+the largest and most complex source code files in a project repository.
+Complexity arises naturally from the nature of the features that 
+controllers contain; syncing up to multiple data sources to show content
+to a user, performing image processing in the background, etc. This makes 
+`UIViewController` a prime candidate for careful modular design. 
+
+Modular code is a crucial aspect of a maintainable codebase. Dave Thomas, 
 one of two authors of *The Pragmatic Programmer: From Journeyman to 
 Master* (Hunt, 2000) writes,
 
@@ -12,45 +26,43 @@ Master* (Hunt, 2000) writes,
 > two or three different representations will most likely fall out of step with 
 > each other. Even if they don't, you're guaranteeing yourself the headache of 
 > maintaining them in parallel whenever a change occurs. And change will occur. 
-> [The “don't repeat yourself” software engineering paradigm] is 
+> [The &#8220;don't repeat yourself&#8221; software engineering principle] is 
 > important if you want flexible and maintainable software.
 
-In iOS mobile applications, `UIViewController` implementations are often
-the largest and most complex source code files in a project repository.
-Complexity arises naturally from the complex nature of the features that 
-controllers often contain, which makes these controllers a prime
-candidate for careful modular design. 
-
-This report discusses two different methods of implementing a module for
-`UIViewController`. An example feature specification will first be 
+This article discusses two different methods (that is, strategies) for 
+implementing a module for
+a `UIViewController` feature. First, an example feature specification will be 
 implemented directly in a controller with no module. 
-The implementation will then become modular
-with the use of a helper class. After introductions to categories and 
-associated objects, a second modular implementation will be given that 
-uses categories. Finally, these two module implementations will be 
-compared.
+The implementation will then be made modular
+with the use of a helper class. Finally, after an introduction to categories 
+and associated objects, a second modular implementation will be given that 
+uses categories. As these two module implementations each have pros and cons,
+at the end of this article they will be compared.
 
-The content of this report assumes that the reader has basic knowledge 
+The content of this article assumes that the reader has basic knowledge 
 and understanding of iOS development and the Objective-C programming language.
 
-## Analysis
+## Sharing Photos
 Consider an example feature specification, which will accompany the rest of 
-this report.
-In a mobile application, the user has set his account up with an avatar. This
-feature would allow the user to share his or her avatar to Facebook or Twitter. 
+this article.
+In a mobile application, users have set each of their accounts up with an avatar. 
+This feature would allow them to share their avatars to a social network
+of their choosing.
 The user interface for this feature is a button and a list of options;
-the user will tap the button to access a list of social networks to share
-the avatar to. Additionally, this feature should appear in several places
-in the application; perhaps this will happen in the app where the user
+users will first tap the button to access a list of social networks to share
+the avatar to, and then select from the list to share the photo. 
+
+Additionally, this feature should appear in several places
+in the application. Perhaps this will happen in the app where the user
 sees his or her profile, or in the place where the user views photos,
 etc. Where this feature appears is not as important as the fact that it
 has to be implemented in several `UIViewController`s.
 
-The specification requires that this feature be implemented in 
-multiple controllers. Without modular design, this feature may be 
-implemented into each of them as follows.
+Although the goal is to implement a module for this feature, 
+first it will be implemented via copy-and-paste into each `UIViewController`
+as follows.
 
-```objc
+```objectivec
 @implementation MyViewController : UIViewController 
 
 // Note: This code snippet only includes relevant pieces of code, and leaves
@@ -130,7 +142,7 @@ can serve as a target for an instance method that is defined on it.
 Here is some sample code for the new helper class, 
 along with the updated source code for `MyViewController`.
 
-```objc
+```objectivec
 // ShareAvatarHelper.m
 @implementation ShareAvatarHelper
 
@@ -170,7 +182,7 @@ along with the updated source code for `MyViewController`.
 @end
 ```
 
-```
+```objectivec
 // MyViewController.m
 #import "ShareAvatarHelper.h"
 
@@ -194,12 +206,12 @@ along with the updated source code for `MyViewController`.
 @end
 ```
 
-Note that it is *very important* to keep a retained reference to the helper 
+Note that it is *critical* to keep a retained reference to the helper 
 object after it has been allocated. Most objects that contain delegates
 (i.e. `UIActionSheet`, `UIAlertView`) hold an `assign`
 reference to the delegate; this means that these interfaces won't retain their
 delegates (*UIActionSheet Class Reference*, 2013; *UIAlertView*
-Class Reference}, 2014). The interface `addTarget:action:forControlEvents`
+Class Reference, 2014). The `addTarget:action:forControlEvents` interface
 does not retain `target`, either (*UIControl Class Reference*, 2011). 
 If the helper object is not retained as a 
 property or otherwise, it will be garbage collected after the scope of the 
@@ -214,16 +226,17 @@ property, initialize the helper in a controller initialization method,
 and hook it up to the user interface.
 
 Although iOS mobile application developers are fortunate that it is already 
-this easy to “add a method” to a controller, there is another very good
-alternative. In particular, using Objective-C's categories allows developers 
-to implement a helper *method* instead of implementing a helper 
-*object* that contains the functionality in an instance method.
+this easy to &#8220;add a method&#8221; to a controller, there is another good
+alternative. In particular, instead of implementing a helper 
+*object* that contains the functionality in an instance method, 
+using Objective-C's categories allows developers to implement a helper 
+*method*.
 
 ### Category Modules
 Categories are, in essence, method modules. According to the Apple developer 
-documentation, “a category can be declared for any class, ... [and] at 
+documentation, &#8220;a category can be declared for any class, ... [and] at 
 runtime, there's no difference between a method added by a category and one 
-that is implemented by the original class.” Note that any method that is
+that is implemented by the original class.&#8221; Note that any method that is
 defined in the *implementation file* for a category will be added to a
 class at runtime, not just ones that are declared in the header file.
 
@@ -247,12 +260,12 @@ The following is a warning from Apple docs about Objective-C categories.
 > method implementation is used at runtime (*Programming With Objective-C:
 > Customizing Existing Classes*, 2012).
 
-That's *scary*. If a category is applied to a controller, and the methods
+That&#8217;s *scary*. If a category is applied to a controller, and the methods
 that are added by the category do not follow a special naming convention,
-it is very easy for subtle bugs to appear. There are no warnings shown
+then subtle bugs will likely appear. There are no warnings shown
 in the XCode development environment when a method is declared twice in
 two different places. The method that is being declared for the second time
-might even work as expected if the runtime happens to choose it---but
+might even work as expected if the runtime happens to choose it&mdash;but
 the method implementation that was declared in the other place won't ever
 be executed.
 
@@ -261,13 +274,14 @@ code that is much less easy to break. A simple naming
 convention is the first: prepending methods names exposed by the category with 
 some shorthand of the name 
 of the category. For example, the method exposed by the category 
-implementation of this report's example feature module will be 
+implementation of this article's example feature module will be 
 `shareav_shareButtonTapped`.
-The second technique is to hide any helper methods that are not needed by 
-the controller. In practice, this may not be necessary as certain features
-can be implemented entirely in a single method. However, a nice design for
-a feature that requires helper methods (or needs to implement a delegate 
-interface) 
+
+The second technique is to hide any helper methods that do not need to be 
+exposed to the controller. 
+In practice, this may not be necessary as certain features
+can be implemented entirely in a single method. However, one way to perform
+this encapsulation
 is to instantiate a helper class within the method exposed by the category, 
 and use Objective-C's *associated objects* framework to retain that 
 reference for the lifetime of the controller. This is how the example avatar 
@@ -280,7 +294,7 @@ runtime framework, a developer can set and get associated objects of some
 target object using a key as follows:
 
 
-```objc
+```objectivec
 #import "objc/runtime.h"
 
 // Associated objects are accessed via a constant void* key.
@@ -321,7 +335,7 @@ Bringing the ideas detailed in the previous sections together, and using
 the previously-implemented `ShareAvatarHelper` class, here is an
 implementation of an avatar sharing category for controllers.
 
-```objc
+```objectivec
 // UIViewController+ShareAvatar.m
 #import "objc/runtime.h"
 #import "ShareAvatarHelper.h"
@@ -344,7 +358,7 @@ const static void* SHARE_AVATAR_IMPL_KEY = &SHARE_AVATAR_IMPL_KEY;
 @end
 ```
 
-```objc
+```objectivec
 // MyViewController.m
 #import "UIViewController+ShareAvatar.h"
 
@@ -418,7 +432,7 @@ Hunt, A., & Thomas, D. (2000). *The Pragmatic Programmer: From Journeyman to Mas
 
 *UIActionSheet Class Reference*. (2013, September 12). Retrieved May 2, 2014, from https://developer.apple.com/library/ios/documentation/uikit/reference/uiactionsheet_class/Reference/Reference.html
 
-*UIAlertView Class Reference*. (2014, February 11). Retrieved May 2, 2014, from https://developer.apple.com/library/ios/documentation/uikit/reference/UIAlertView_Class/UIAlertView/UIAlertView.html#//apple_ref/occ/instp/UIAlertView/delegate
+*UIAlertView Class Reference*. (2014, February 11). Retrieved May 2, 2014, from https://developer.apple.com/library/ios/documentation/uikit/reference/UIAlertView_Class/UIAlertView/UIAlertView.html
 
-*UIControl Class Reference*. (2011, September 28). Retrieved May 2, 2014, from https://developer.apple.com/library/ios/documentation/uikit/reference/uicontrol_class/reference/reference.html#//apple_ref/occ/instm/UIControl/addTarget:action:forControlEvents: 
+*UIControl Class Reference*. (2011, September 28). Retrieved May 2, 2014, from https://developer.apple.com/library/ios/documentation/uikit/reference/uicontrol_class/reference/reference.html
 
