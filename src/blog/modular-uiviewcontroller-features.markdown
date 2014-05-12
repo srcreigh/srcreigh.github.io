@@ -29,6 +29,14 @@ Master* (Hunt, 2000) writes,
 > [The &#8220;don't repeat yourself&#8221; software engineering principle] is 
 > important if you want flexible and maintainable software.
 
+Base classes are one strategy for writing modular controllers. This is well 
+suited for framework-level functionality that a team would like to be available
+to every controller they write. Sometimes, it is even a good way to give
+a specific set of controllers functionality. However, this does&#8217;t always
+work. If a controller needs feature A and feature B, then since Objective C
+doesn&#8217;t support multiple inheritance, it can't get the functionality from
+both `AViewController` and `BViewController`; another method is needed.
+
 This article discusses two different methods (that is, strategies) for 
 implementing a module for
 a `UIViewController` feature. First, an example feature specification will be 
@@ -118,7 +126,7 @@ as follows.
 @end
 ```
 
-### Helper Class Modules
+## Helper Class Modules
 
 The transition to a more modular design is not terribly difficult. However,
 there are several caveats. One 
@@ -232,7 +240,7 @@ alternative. In particular, instead of implementing a helper
 using Objective-C's categories allows developers to implement a helper 
 *method*.
 
-### Category Modules
+## Category Modules
 Categories are, in essence, method modules. According to the Apple developer 
 documentation, &#8220;a category can be declared for any class, ... [and] at 
 runtime, there's no difference between a method added by a category and one 
@@ -251,7 +259,7 @@ in one category as well as in an original implementation) produces undefined
 behaviour. The second concern is that categories don't (really) have 
 properties.
 
-#### Writing Safe Method Declarations
+### Writing Safe Method Declarations
 The following is a warning from Apple docs about Objective-C categories.
 
 > If the name of a method declared in a category is the 
@@ -288,7 +296,7 @@ reference for the lifetime of the controller. This is how the example avatar
 sharing feature category module will be implemented: 
 `ShareAvatarHelper` will be used within the category!
 
-#### Using Associated Objects
+### Using Associated Objects
 An associated object is essentially a dynamic property. Using the Objective-C 
 runtime framework, a developer can set and get associated objects of some 
 target object using a key as follows:
@@ -329,7 +337,7 @@ The implementation for the example feature category module will use the
 associated objects framework to properly retain the helper class for the 
 lifetime of the controller.
 
-### Implementing an Avatar Sharing Category
+## Implementing an Avatar Sharing Category
 
 Bringing the ideas detailed in the previous sections together, and using
 the previously-implemented `ShareAvatarHelper` class, here is an
@@ -382,7 +390,7 @@ properties by default, since
 it is a category of `UIViewController`. Lastly, of course, it exposes a 
 method; that is the very point of categories!
 
-### Category Modules vs. Helper Class Modules
+## Category Modules vs. Helper Class Modules
 
 The implementation of `MyViewController` using the category
 is even simpler than using the helper class. 
@@ -411,19 +419,6 @@ be able to use their knowledge of other programming languages to understand
 how a category module that uses associated objects works. In different 
 ways, both strategies require a certain level of expertise with the 
 Objective-C language.
-
-## Conclusions
-
-Implementing the same functionality in multiple `UIViewControllers`
-should be done with modules and not by copying and pasting code.
-
-Helper class modules are good for teams that would rather avoid the use
-of obtuse parts of the Objective-C framework at the expense of a 
-slightly inelegant integration.
-
-Category modules would be prefereable to teams who prefer to make 
-integration a breeze and don't mind using obtuse parts of the Objective-C 
-framework to accomplish that.
 
 ## References
 Hunt, A., & Thomas, D. (2000). *The Pragmatic Programmer: From Journeyman to Master*. Reading, Mass.: Addison-Wesley.
