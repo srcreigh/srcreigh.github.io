@@ -32,13 +32,13 @@ Master* (Hunt, 2000) writes,
 Base classes are one strategy for writing modular controllers. This is well 
 suited for framework-level functionality that a team would like to be available
 to every controller they write. Sometimes, it is even a good way to give
-a specific set of controllers functionality. However, this does&#8217;t always
-work. If a controller needs feature A and feature B, then since Objective C
-doesn&#8217;t support multiple inheritance, it can't get the functionality from
-both `AViewController` and `BViewController`; another method is needed.
+a specific set of controllers functionality. However, this doesn&#8217;t always
+work for a complex feature set. If a controller needs feature A and feature B, 
+then since Objective C
+doesn&#8217;t support multiple inheritance, it can't inherit the functionality 
+from both `AViewController` and `BViewController`; another strategy is needed.
 
-This article discusses two different methods (that is, strategies) for 
-implementing a module for
+This article discusses two different strategies for implementing a module for
 a `UIViewController` feature. First, an example feature specification will be 
 implemented directly in a controller with no module. 
 The implementation will then be made modular
