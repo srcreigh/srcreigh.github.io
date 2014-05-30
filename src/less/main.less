@@ -25,6 +25,10 @@
    the divider pokes up a bit */
 @padding-top: 14px;
 
+/* the margin that goes above each paragraph and other paragraph-like
+   element */
+@paragraph-margin-top: 10px;
+
 @full-size: (@sidebar-width * 2 + @inner-holder-width);
 
 .word-wrap() {
@@ -73,7 +77,7 @@ body {
 p {
   .serif();
   line-height: 140%;
-  margin-top: 10px;
+  margin-top: @paragraph-margin-top;
 }
 
 code {
@@ -82,7 +86,7 @@ code {
 
 pre {
   line-height: 110%;
-  margin-top: 10px;
+  margin-top: @paragraph-margin-top;
 
   background: #111;
   code {
@@ -120,7 +124,7 @@ h1:first-child {
 }
 
 blockquote {
-  border-left: 10px @light-color solid;
+  border-left: @paragraph-margin-top @light-color solid;
   background: @gray1;
 
   margin-top: 10px;
@@ -172,6 +176,16 @@ em { font-style: italic; }
   
   a {
     .word-wrap();
+  }
+
+  ol, ul {
+    margin-top: @paragraph-margin-top;
+  }
+
+  li {
+    list-style-type: disc;
+    margin-left: 30px;
+    line-height: 140%;
   }
 }
 
