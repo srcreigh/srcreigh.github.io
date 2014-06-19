@@ -26,14 +26,5 @@ is a short guide about the basics of RackUnit. For example, to write
 a test-case for the associativity of addition, we might write the following
 Racket code.
 
-```racket
-(require rackunit)
-
-(test-case
-  "associativity of addition"
-  (check-equal? (+ (+ 1 2) 3) (+ 1 (+ 2 3)))
-  (check-equal? (+ 10 (+ 11 12)) (+ (+ 10 11) 12)))
-```
-
 If the test cases pass, they won't print anything; however, if we write
 a test case that fails, it will report the failure for

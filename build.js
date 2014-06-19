@@ -29,9 +29,6 @@ Metalsmith(__dirname)
     }
   }))
 
-  // ignore drafts
-  .use(ignore('blog/drafts/*'))
-
   // Metadata
   .use(metadata({
     global: "metadata/global.json",
