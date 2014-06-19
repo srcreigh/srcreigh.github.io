@@ -67,7 +67,7 @@ Metalsmith(__dirname)
   .use(excerpts())
   .use(collections({
     posts: {
-      pattern: 'blog/**/*.markdown',
+      pattern: 'blog/posts/*.markdown',
       sortBy: 'date',
       reverse: true
     }
