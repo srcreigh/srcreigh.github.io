@@ -36,7 +36,7 @@ UW students prepare for their co-op experience.
 
 After I introduce myself and my friends, I will talk about a few themes that
 I feel are really important: microresearch skills, and not having to know
-everything. Last, I&rswuo;ll present some thoughts we have about development
+everything. Last, I&rsquo;ll present some thoughts we have about development
 environments: Unix-based operating systems, text editors, and other tools.
 
 ## About Us
