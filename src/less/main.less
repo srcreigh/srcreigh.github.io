@@ -8,8 +8,8 @@
 
 @gray1: #f6f6f6;
 
-@link-color: @main-color;
-@link-visited-color: @dark-color;
+@link-color: darken(@main-color, 10%);
+@link-visited-color: darken(@dark-color, 5%);
 
 /* positioning constants */
 @sidebar-width: 225px;
@@ -139,8 +139,8 @@ p > blockquote:first-child {
   margin-top: 0;
 }
 
-a:link    { color: @main-color; }
-a:visited { color: @dark-color; }
+a:link    { color: @link-color; }
+a:visited { color: @link-visited-color; }
 
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
