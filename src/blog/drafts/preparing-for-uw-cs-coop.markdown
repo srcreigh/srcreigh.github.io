@@ -41,7 +41,7 @@ This series is going to be introduction after introduction to new ideas, technol
 
 That being said, it is always very useful to know what kinds of tools, libraries, processes, paradigms, etc. already exist and what they&rsquo;re good for. If you don&rsquo;, one thing you might end up doing is create a tool that already exists. Although this might be a good exercise, in general you don&rsquo;t want to waste your time remaking things. Another danger is giving up on a project because you need to do something that a) you don&rsquo;t know a tool exists to help you with and b) that is too difficult to write on your own. 
 
-In spirit of all this, the next part of this post talks about stuff you may not know about: operating systems, scripting, text editors, and other development tools.
+In spirit of all this, the next part of this post talks about stuff you may not know about: Unix-like operating systems, scripting, text editors, and other development tools.
 
 ## Your Development Environment
 ### Operating System
