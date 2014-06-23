@@ -45,12 +45,12 @@ In spirit of all this, the next part of this post talks about stuff you may not 
 
 ## Your Development Environment
 ### Operating System
-Most of you incoming students use Windows or OSX operating systems on your computers. The University of Waterloo (and Liam and I) encourage the use of a Unix-like operating system. The reason why Unix-like operating systems are popular for developers is because a lot of really great development tools (text editors, compilers, build tools) are available on them. Unix itself is an operating system that was invented a while ago by the same two guys who created the C programming language. 
+Most of you incoming students use Windows or OS X operating systems on your computers. The University of Waterloo (and Liam and I) encourage the use of a Unix-like operating system. The reason why Unix-like operating systems are popular for developers is because a lot of really great development tools (text editors, compilers, build tools) are available on them. Unix itself is an operating system that was invented a while ago by the same two guys who created the C programming language. 
 
-Mac OSX itself is Unix-based, but Windows is not. Linux is a free, Unix-like operating system. It is also open-source technology, so there are many branches of it. These are called distributions, or &ldquo;distros&rdquo;. Those of you that use Mac OSX don&rsquo;t really have to install Linux, as most of the tools available on Linux are also available on OSX. However, those of you that use Windows will want to have access to Linux. 
+OS X itself is Unix-based, but Windows is not. Linux is a free, Unix-like operating system. It is also open-source technology, so there are many branches of it. These are called distributions, or &ldquo;distros&rdquo;. Those of you that use OS X don&rsquo;t really have to install Linux, as most of the tools available on Linux are also available on OS X. However, those of you that use Windows will want to have access to Linux. 
 
 In terms of which Linux distro you should use, I have always had success with [Ubuntu](www.ubuntu.com/), and I have also always heard good things about [Linux Mint](www.linuxmint.com) and [Fedora](fedoraproject.org).
-If you want to dual boot a Linux distro alongside OSX or Windows, you should Google a tutorial: &ldquo;how to dual-boot $DISTRO and $YOUR\_OS&rdquo;. If you run into any issues setting up your wireless internet adapter or your graphics card, this is a fantastic opportunity for you to develop your research skills: Google, Stack Overflow, try something, and repeat if it didn&rsquo;t work.
+If you want to dual boot a Linux distro alongside OS X or Windows, you should Google a tutorial: &ldquo;how to dual-boot $DISTRO and $YOUR\_OS&rdquo;. If you run into any issues setting up your wireless internet adapter or your graphics card, this is a fantastic opportunity for you to develop your research skills: Google, Stack Overflow, try something, and repeat if it didn&rsquo;t work.
 
 ### Scripting, Text Editors, and other tools
 Learning how to use the command line and write bash scripts is a very useful skill. Liam, helpfully, has made some [very good notes](http://lihorne.com/course-notes/) for CS246, which is a course at Waterloo that introduces bash scripting and other tools. Once you have access to a Unix-like operating system, you should try some of that stuff out.
@@ -63,7 +63,7 @@ Here is a quick summary of a bunch of other useful tools, and what they are used
 
 **Package Managers**: Used for installing programs and programming libraries. 
 * *Ubuntu*: `apt-get`, Ubuntu Software Center. Can install things like programming language environments, Vim, window managers, hardware drivers, etc. for a Ubuntu or any other (here&rsquo;s a new word) Debian system. 
-* *OSX*: [Homebrew](http://brew.sh), [MacPorts](http://macports.org). These package managers make it very easy to install programming languages, libraries, tools, and others on OSX.
+* *OS X*: [Homebrew](http://brew.sh), [MacPorts](http://macports.org). These package managers make it very easy to install programming languages, libraries, tools, and others on OS X.
 * *Language specific*: Used to install libraries that are specific to a programming language.
   * Python: `pip`.
   * NodeJS: `npm`.
