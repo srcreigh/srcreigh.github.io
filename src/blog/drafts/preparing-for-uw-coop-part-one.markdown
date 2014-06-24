@@ -64,10 +64,14 @@ Here is a quick summary of a bunch of other useful tools, and what they are used
 **Compilers**: Used to compile high-level code to machine code.
 * `gcc`: GNU Compiler Collection. Contains compilers for C, C++, Objective-C, Go, and more.
 
+**Debugging**: When your code has bugs, these tools help you discover what those bugs are.
+* [Valgrind](http://valgrind.org): Checks your code for memory leaks, provides a cache and branch prediction profiler, and more.
+* [GDB](http://www.gnu.org/software/gdb/): Allows you to step through the code of a program, or determine at what line it has crashed at.
+
 **Document Writing / Typesetting**: Typesetting math homework, blog posts, etc.
 * [Markdown](http://daringfireball.net/projects/markdown/): A simple document format for writing html.
 * [pandoc](http://johnmacfarlane.net/pandoc/): Convert documents between formats (i.e. HTML, markdown, LaTex, many others).
-* [LaTeX](http://www.latex-project.org/): A typesetting system for writing beautiful PDF documents. Has great support for typesetting math, code, has several drawing libraries for diagrams, etc. I like to typeset my math assignments in LaTeX, I wrote my resume in LaTeX, Liam&rsquo;s course notes are in LaTeX (and he has [a tutorial on his blog about it](http://lihorne.com/blog/2014/02/01/typesetting-course-notes-with-latex/)).
+* [LaTeX](http://www.latex-project.org/): A typesetting system for writing beautiful PDF documents. Has great support for typesetting math, code, has several drawing libraries for diagrams, etc. I like to typeset my math assignments in it, I wrote my resume in it, Liam&rsquo;s course notes are in it (and he has [a tutorial on his blog about it](http://lihorne.com/blog/2014/02/01/typesetting-course-notes-with-latex/)).
 
 **Online Backup Services**: Back up your files, so if something happens to your computer then you will be able to recover them.
 * [Dropbox](http://dropbox.com): This software adds a folder to your computer that is automatically synced with the cloud. You can access files on one computer and see them on the other, and also access your files with the Dropbox web application.
