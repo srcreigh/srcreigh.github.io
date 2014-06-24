@@ -2,12 +2,7 @@
 title: Preparing for UW Co-op, Part I
 date: 2014-06-18
 template: post.jade
-preamble: >
-  This is the first post of several that I am writing with the help
-  of my friends Charles Lin, Evy Kassirer, and Liam Horne. This series is 
-  being released in order to help incoming University of Waterloo Computer 
-  Science or Software Engineering students prepare for the competitive 
-  co-op program at Waterloo.
+preamble: This is the first post of several that I am writing with the help of my friends Charles Lin, Evy Kassirer, Liam Horne, and others. This series is being released in order to help incoming University of Waterloo Computer Science or Software Engineering students prepare for the competitive co-op program at Waterloo.
 ---
 
 [last year]: /blog/posts/write-a-function-coop-coop-copo-cpoo-ocop/)
@@ -86,7 +81,7 @@ Here is a quick summary of a bunch of other useful tools, and what they are used
 
 **Window Management**: Tools that help you efficiently use your screen space.
 * `xmonad`: My only experience with tiling window managers. It tiles windows, and also can be configured quite extensively.
-* Awesome Window Manager / `awm`: Cool people I know use this one too, so it migth be worth a try.
+* Awesome Window Manager / `awm`: Cool people I know use this one too, so it might be worth a try.
 
 **Writing documents**: Typesetting math homework, blog posts, etc.
 * [Markdown](http://daringfireball.net/projects/markdown/): A simple document format for writing html.
@@ -98,4 +93,4 @@ Here is a quick summary of a bunch of other useful tools, and what they are used
 
 **Source Code Hosting**: Keep a remote backup of your source code / have an online portfolio of some code that you&rsquo;ve written. These usually work alongside a version control system, which is usually Git.
 * [Github](http://github.com): A very popular source code hosting service. Has issue-tracking, pull requests (for easy collaboration), forking (allows you to make a copy of someone&rsquo;s codebase in order for you to make your own modifications to it). Serves extremely well as an online software engineering portfolio, which will be talked about more in a later post. 
-* [Bitbucket](http://bitbucket.com): A source code hosting service that is a lot like Github. It generally has a subset of features that Github offers, but it gives students free private repositories which is pretty cool.
+* [Bitbucket](http://bitbucket.com): A source code hosting service that is a lot like Github. It generally has a subset of features that Github offers, but it gives students free private repositories, which is pretty cool.
