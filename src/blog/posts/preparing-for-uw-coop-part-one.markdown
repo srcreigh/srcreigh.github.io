@@ -46,14 +46,15 @@ OS X itself is Unix-based, but Windows is not. Linux is a free, Unix-like operat
 In terms of which Linux distro you should use, I have always had success with [Ubuntu](www.ubuntu.com/), and I have also always heard good things about [Linux Mint](www.linuxmint.com) and [Fedora](fedoraproject.org).
 If you want to dual boot a Linux distro alongside OS X or Windows, you should Google a tutorial: &ldquo;how to dual-boot $DISTRO and $YOUR\_OS&rdquo;. If you run into any issues setting up your wireless internet adapter or your graphics card, this is a fantastic opportunity for you to develop your research skills: Google something, read about it on a Stack Overflow page, try it, and repeat if it didn&rsquo;t work.
 
-### Scripting, Text Editors, and other tools
+### Scripting and Text Editors
 Learning how to use the command line and write bash scripts is a very useful skill. Liam, helpfully, has made some [very good notes](http://lihorne.com/course-notes/) for CS246, which is a course at Waterloo that introduces bash scripting and other tools. Once you have access to a Unix-like operating system, you should try some of that stuff out.
 
 Another important tool in a software developer&rsquo;s toolbelt is the text editor. For most things, i.e. writing code, writing HTML / LaTeX which are not code, writing this blog post, etc. I use Vim, which a text editor. Essentially, when you spend your day editing text, you might as well have tools that are more powerful than basic text editors like Notepad. You will want to be able to easily find and replace text, copy and delete lines and text very quickly, have syntax highlighting for your code, and more; this is what a text editor can give you. 
 
 A good (and hip) starting text editor is Sublime Text. It has a strong community, a bunch of good features, and is easy to use. You might actually not need to move to a different editor; Liam uses Sublime and likes it a lot. I also have to mention two (the only two, essentially) advanced text editors: Vim and Emacs. You may choose one at some point in the future, but I wouldn&rsquo;t touch these tools until after you&rsquo;ve written some code and want something more powerful (at the cost of being harder to learn).
 
-Here is a quick summary of a bunch of other useful tools, and what they are used for. Keep these in mind; you will very likely encounter problems that these tools can solve. I don&rsquo;t thing you should learn all these tools right away. Just know that they exist and what they&rsquo;re used for, so you can learn then when you need to use them.
+### Other Tools
+Here is a quick summary of a bunch of other useful tools, and what they are used for. Keep these in mind; you will very likely encounter problems that these tools can solve. I don&rsquo;t think you should learn all these tools right away. Just know that they exist and what they&rsquo;re used for, so you can learn them when you need to use them.
 
 **Build tools**: Used to automate the building of large projects.
 * GNU Make / `make`: You will be taught how to use this tool in CS246, and you might not need it until then. It is used for automating the building of large programs via the command line and configuration files.
