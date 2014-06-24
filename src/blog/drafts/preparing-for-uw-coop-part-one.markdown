@@ -121,6 +121,6 @@ If you want to learn about something I&rsquo;ve included in these posts but can&
 
 This was Part I. In the future, I want to cover things like github profiles, personal projects, open source, hackathons, and more. Until then, good luck setting up your development environments!
 
-[last year]: /blog/posts/write-a-function-coop-coop-copo-cpoo-ocop/)
-[reddit thread]: http://www.reddit.com/r/uwaterloo/comments/vzd9u/what_should_i_do_to_prepare_for_my_first_year_in/)
+[last year]: /blog/posts/write-a-function-coop-coop-copo-cpoo-ocop/
+[reddit thread]: http://www.reddit.com/r/uwaterloo/comments/vzd9u/what_should_i_do_to_prepare_for_my_first_year_in/
 [tabbr]: https://chrome.google.com/webstore/detail/tabbr/pnlmkddpdkjapnghefahkniilfnodcol
