@@ -119,7 +119,7 @@ First, I just want to reiterate that we know how many things there to learn. It 
 
 If you want to learn about something I&rsquo;ve included in these posts but can&rsquo;t find a good resource to learn from, please let me know! I&rsquo;ll admit, sometimes the things Google gives you aren&rsquo;t really approachable to beginners (for example, I tried Googling bash tutorials and didn&rsquo;t like some of the things I clicked on). You can [tweet at me](http://twitter.com/srcreigh), [message me on facebook](http://facebook.com/srcreigh), or, even better, [post on the 2014 UW Math / CS frosh group](https://www.facebook.com/groups/469583689835057/). If you hunt down Evy on facebook, I&rsquo;m certain she&rsquo;ll also help you out. Remember: don&rsquo;t be scared to say that you couldn&rsquo;t figure something out. It&rsquo;s most likely something that most of us got stuck on, too.
 
-This was Part I. In the future, I want to cover things like github profiles, personal projects, open source, hackathons, and more. Until then, good luck setting up your development environments!
+This was Part I. In the future, I want to cover things like github profiles, extracurricular learning, personal projects, open source, hackathons, and more. Until then, good luck setting up your development environments!
 
 [last year]: /blog/posts/write-a-function-coop-coop-copo-cpoo-ocop/
 [reddit thread]: http://www.reddit.com/r/uwaterloo/comments/vzd9u/what_should_i_do_to_prepare_for_my_first_year_in/
