@@ -35,6 +35,8 @@ This series is going to be introduction after introduction to new ideas, technol
 
 That being said, it is always very useful to know what kinds of tools, libraries, processes, paradigms, etc. already exist and what they&rsquo;re good for. If you don&rsquo;, one thing you might end up doing is create a tool that already exists. Although this might be a good exercise, in general you don&rsquo;t want to waste your time remaking things. Another danger is giving up on a project because you need a tool you don&rsquo;t know exists.
 
+An extremely valuable resource for getting high-level overviews of new tools is [Hacker News](http://news.ycombinator.com). It is a bit like a subreddit that is very tech-oriented. You&rsquo;ll see posts about new versions of programming languages (Go and Swift are pretty hot these days), tutorials for things like concurrent programming or functional programming, lots of stuff about startups and startup founders, and maybe even this post! It&rsquo;s pretty much vital to read hacker news semi-regularly if you want to stay up on all the things that are going on in the tech world.
+
 In spirit of all this, the next part of this post talks about things you may not know about: Unix-like operating systems, scripting, text editors, and other development tools.
 
 ## Your Development Environment
