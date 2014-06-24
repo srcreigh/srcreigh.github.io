@@ -68,6 +68,10 @@ Here is a quick summary of a bunch of other useful tools, and what they are used
 * [Valgrind](http://valgrind.org): Checks your code for memory leaks, provides a cache and branch prediction profiler, and more.
 * [GDB](http://www.gnu.org/software/gdb/): Allows you to step through the code of a program, or determine at what line it has crashed at.
 
+**Difftools**: When you&rsquo;ve made changes to some code, it is sometimes helpful to review what has changed before, for example, pushing your code up to Github.
+* [`diff`](http://www.gnu.org/software/diffutils/): A command-line tool for examining the differences between two files. Great for quick and dirty diffing.
+* [DiffMerge](https://sourcegear.com/diffmerge/): A visual difftool. This is what I used at Relay! It&rsquo;s really pretty and gets the job done.
+
 **Document Writing / Typesetting**: Typesetting math homework, blog posts, etc.
 * [Markdown](http://daringfireball.net/projects/markdown/): A simple document format for writing html.
 * [pandoc](http://johnmacfarlane.net/pandoc/): Convert documents between formats (i.e. HTML, markdown, LaTex, many others).
