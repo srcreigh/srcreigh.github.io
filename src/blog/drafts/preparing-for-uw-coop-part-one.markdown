@@ -18,7 +18,7 @@ Having public discussions about good things to learn and do for UW co-op is real
 
 Liam Horne, Evy Kassirer, and Charles Lin are some of the friends that I spoke to about this post. They're all in CS co-op at UW, and they are all doing awesome things on co-op this summer. Liam, in his second year, is Lead Developer at Piinpoint, a UW Velocity startup. They are in the current Y-Combinator batch. Evy has just finished first year, and is in California right now, interning at Google. Evy could be considered a success story for this kind of discussion; she&rsquo;s told me that [the post I made last year][last year] helped her a lot. Lastly, in his second year, my friend Charles is hacking monetization at LinkedIn in California for his second co-op term.
 
-In addition to those three, various friends of mine helped edit, revise and give thoughts about this post. Thanks to Sankarshan, Angelina, and Jacob.
+In addition to those three, various friends of mine helped edit, revise and give thoughts about this post. Thanks to Sankarshan, Angelina, Jacob, and Robert.
 
 ## Introduction
 This post is about the development environment. However, before I talk about that I want to introduce a few themes that I feel I will return to again and again throughout these posts.
