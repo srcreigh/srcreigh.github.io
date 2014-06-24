@@ -5,10 +5,6 @@ template: post.jade
 preamble: This is the first post of several that I am writing with the help of my friends Charles Lin, Evy Kassirer, Liam Horne, and others. This series is being released in order to help incoming University of Waterloo Computer Science or Software Engineering students prepare for the competitive co-op program at Waterloo.
 ---
 
-[last year]: /blog/posts/write-a-function-coop-coop-copo-cpoo-ocop/)
-[reddit thread]: http://www.reddit.com/r/uwaterloo/comments/vzd9u/what_should_i_do_to_prepare_for_my_first_year_in/)
-[tabbr]: https://chrome.google.com/webstore/detail/tabbr/pnlmkddpdkjapnghefahkniilfnodcol
-
 All throughout the year, students like myself from the University of Waterloo who study Computer Science, Software Engineering, and related programs are co-oping (Americans, read: interning) all around North America. From Canadian companies like Shopify, Kik and Thalmic Labs to big-name Silicon Valley companies such as Google, Microsoft and Apple to startups going through Y-Combinator, you'll find students from the University of Waterloo. I think this is fantastic, and I am very pleased to be a part of it all. 
 
 As you might imagine, the co-op system at Waterloo is very competitive. Although there are hundreds of positions available every term for CS/SE students, not everyone finds a co-op job in their first one or two terms. Even some students that do get a co-op job find that their job is unsatisfactory (&ldquo;I have three interviews, but they&rsquo;re only for QA positions&rdquo;). For the most part, I think, it&rsquo;s not that students have trouble finding a good job because they&rsquo;re not good enough; it&rsquo;s just that they&rsquo;re unprepared to show employers how awesome they are. Things like having a handful of side projects to put on your resume, and being able to set up a development environment, can make all the difference when you don&rsquo;t have any previous work experience.
@@ -20,7 +16,9 @@ In making this post, lots of ideas were thrown around between me and a few frien
 
 Having public discussions about good things to learn and do for UW co-op is really becoming a habit of mine. There is the aforementioned [reddit thread][] I started, asking for cool things to do to prepare for UW co-op before I arrived, and right after getting my co-op job at Relay last summer (2013), I wrote [this blog post][last year] to talk about things I did that seemed to help score me that great first job. 
 
-Liam Horne, Evy Kassirer, and Charles Lin are the friends that I spoke to about this post. They're all in CS co-op at UW, and they are all doing awesome things on co-op this summer. Liam, in his second year, is Lead Developer at Piinpoint, a UW Velocity startup. They are in the current Y-Combinator batch. Evy has just finished first year, and is in California right now, interning at Google. Evy could be considered a success story for this kind of discussion; she&rsquo;s told me that [the post I made last year][last year] helped her a lot. Lastly, in his second year, my friend Charles is hacking monetization at LinkedIn in California for his second co-op term.
+Liam Horne, Evy Kassirer, and Charles Lin are some of the friends that I spoke to about this post. They're all in CS co-op at UW, and they are all doing awesome things on co-op this summer. Liam, in his second year, is Lead Developer at Piinpoint, a UW Velocity startup. They are in the current Y-Combinator batch. Evy has just finished first year, and is in California right now, interning at Google. Evy could be considered a success story for this kind of discussion; she&rsquo;s told me that [the post I made last year][last year] helped her a lot. Lastly, in his second year, my friend Charles is hacking monetization at LinkedIn in California for his second co-op term.
+
+In addition to those three, various friends of mine helped edit, revise and give thoughts about this post. Thanks to Sankarshan, Angelina, and Jacob.
 
 ## Introduction
 This post is about the development environment. However, before I talk about that I want to introduce a few themes that I feel I will return to again and again throughout these posts.
@@ -51,11 +49,27 @@ If you want to dual boot a Linux distro alongside OS X or Windows, you should Go
 ### Scripting, Text Editors, and other tools
 Learning how to use the command line and write bash scripts is a very useful skill. Liam, helpfully, has made some [very good notes](http://lihorne.com/course-notes/) for CS246, which is a course at Waterloo that introduces bash scripting and other tools. Once you have access to a Unix-like operating system, you should try some of that stuff out.
 
-One important tool in a software developer&rsquo;s toolbelt is the text editor. For most things, i.e. writing code, writing HTML / LaTeX which are not code, writing this blog post, etc. I use Vim, which a text editor. Essentially, when you spend your day editing text, you might as well have tools that are more powerful than basic text editors like Notepad. You will want to be able to easily find and replace text, copy and delete lines and text very quickly, have syntax highlighting for your code, and more; this is what a text editor can give you. 
+Another important tool in a software developer&rsquo;s toolbelt is the text editor. For most things, i.e. writing code, writing HTML / LaTeX which are not code, writing this blog post, etc. I use Vim, which a text editor. Essentially, when you spend your day editing text, you might as well have tools that are more powerful than basic text editors like Notepad. You will want to be able to easily find and replace text, copy and delete lines and text very quickly, have syntax highlighting for your code, and more; this is what a text editor can give you. 
 
 A good (and hip) starting text editor is Sublime Text. It has a strong community, a bunch of good features, and is easy to use. You might actually not need to move to a different editor; Liam uses Sublime and likes it a lot. I also have to mention two (the only two, essentially) advanced text editors: Vim and Emacs. You may choose one at some point in the future, but I wouldn&rsquo;t touch these tools until after you&rsquo;ve written some code and want something more powerful (at the cost of being harder to learn).
 
 Here is a quick summary of a bunch of other useful tools, and what they are used for. Keep these in mind; you will very likely encounter problems that these tools can solve. I don&rsquo;t thing you should learn all these tools right away. Just know that they exist and what they&rsquo;re used for, so you can learn then when you need to use them.
+
+**Build tools**: Used to automate the building of large projects.
+* GNU Make / `make`: You will be taught how to use this tool in CS246, and you might not need it until then. It is used for automating the building of large programs via the command line and configuration files.
+* [Jekyll](http://jekyllrb.com/): Jekyll is what is called a *static site generator*. It is a build tool for web pages. You can set up your pages with templates and other useful things, potentially making website development easier and more maintainable.
+* [Metalsmith](http://metalsmith.io): Another static site generator. It&rsquo;s a bit of an underdog, but it&rsquo;s the static site generator that I use, and I enjoy it a lot.
+
+**Compilers**: Used to compile high-level code to machine code.
+* `gcc`: GNU Compiler Collection. Contains compilers for C, C++, Objective-C, Go, and more.
+
+**Document Writing / Typesetting**: Typesetting math homework, blog posts, etc.
+* [Markdown](http://daringfireball.net/projects/markdown/): A simple document format for writing html.
+* [pandoc](http://johnmacfarlane.net/pandoc/): Convert documents between formats (i.e. HTML, markdown, LaTex, many others).
+* [LaTeX](http://www.latex-project.org/): A typesetting system for writing beautiful PDF documents. Has great support for typesetting math, code, has several drawing libraries for diagrams, etc. I like to typeset my math assignments in LaTeX, I wrote my resume in LaTeX, Liam&rsquo;s course notes are in LaTeX (and he has [a tutorial on his blog about it](http://lihorne.com/blog/2014/02/01/typesetting-course-notes-with-latex/)).
+
+**Online Backup Services**: Back up your files, so if something happens to your computer then you will be able to recover them.
+* [Dropbox](http://dropbox.com): This software adds a folder to your computer that is automatically synced with the cloud. You can access files on one computer and see them on the other, and also access your files with the Dropbox web application.
 
 **Package Managers**: Used for installing programs and programming libraries. 
 * *Ubuntu*: `apt-get`, Ubuntu Software Center. Can install things like programming language environments, Vim, window managers, hardware drivers, etc. for a Ubuntu or any other (here&rsquo;s a new word) Debian system. 
@@ -66,31 +80,26 @@ Here is a quick summary of a bunch of other useful tools, and what they are used
   * Ruby: `gem`.
   * Others: Google &ldquo;$LANG package manager&rdquo;.
 
-**Build tools**: Used to automate the building of large projects.
-* GNU Make / `make`: You will be taught how to use this tool in CS246, and you might not need it until then. It is used for automating the building of large programs via the command line and configuration files.
-* [Jekyll](http://jekyllrb.com/): Jekyll is what is called a *static site generator*. It is a build tool for web pages. You can set up your pages with templates and other useful things, potentially making website development easier and more maintainable.
-* [Metalsmith](http://metalsmith.io): Another static site generator. It&rsquo;s a bit of an underdog, but it&rsquo;s the static site generator that I use, and I enjoy it a lot.
-
-**Compilers**: Used to compile high-level code to machine code.
-* `gcc`: GNU Compiler Collection. Contains compilers for C, C++, Objective-C, Go, and more.
+**Project Management**: Keep track of all the tasks in a project.
+* [Trello](http://trello.com): A free project management service. Allows you to organize your individual or team projects easily using little cards. This is a great product for being free; other services such as [Pivotal Tracker](http://www.pivotaltracker.com/) offer similar services, but aren&rsquo;t free.
 
 **Searching Files**: Search for things in files.
 * `grep`: use regular expressions to search text.
 * `find`: search for files in a directory hierarchy.
 * *package managers*: sometimes have search builtin to help you easily find packages.
 
-**Window Management**: Tools that help you efficiently use your screen space.
-* `xmonad`: My only experience with tiling window managers. It tiles windows, and also can be configured quite extensively.
-* Awesome Window Manager / `awm`: Cool people I know use this one too, so it might be worth a try.
-
-**Writing documents**: Typesetting math homework, blog posts, etc.
-* [Markdown](http://daringfireball.net/projects/markdown/): A simple document format for writing html.
-* [pandoc](http://johnmacfarlane.net/pandoc/): Convert documents between formats (i.e. HTML, markdown, LaTex, many others).
-* [LaTeX](http://www.latex-project.org/): A typesetting system for writing beautiful PDF documents. Has great support for typesetting math, code, has several drawing libraries for diagrams, etc. I like to typeset my math assignments in LaTeX, I wrote my resume in LaTeX, Liam&rsquo;s course notes are in LaTeX (and he has [a tutorial on his blog about it](http://lihorne.com/blog/2014/02/01/typesetting-course-notes-with-latex/)).
+**Source Code Hosting**: Keep a remote backup of your source code / have an online portfolio of some code that you&rsquo;ve written. These usually work alongside a version control system, which is usually Git.
+* [Github](http://github.com): A very popular source code hosting service. Has issue-tracking, pull requests (for easy collaboration), forking (allows you to make a copy of someone&rsquo;s codebase in order for you to make your own modifications to it). Serves extremely well as an online software engineering portfolio, which will be talked about more in a later post. 
+* [Bitbucket](http://bitbucket.com): A source code hosting service that is a lot like Github. It generally only has a subset of features that Github offers, but it gives students tons of free private repositories, which is pretty cool. I wrote [an enamoured blog post about this](/blog/posts/bitbucket-my-love/) when I found out about the good private repositories deal for students.
 
 **Version Control Systems**: Keep track of changes in your work over time.
 * [Git](http://git-scm.com/): An industry standard for version control these days. I have never used another version control system, but you should read more about it at the website. This will be covered more in another post.
 
-**Source Code Hosting**: Keep a remote backup of your source code / have an online portfolio of some code that you&rsquo;ve written. These usually work alongside a version control system, which is usually Git.
-* [Github](http://github.com): A very popular source code hosting service. Has issue-tracking, pull requests (for easy collaboration), forking (allows you to make a copy of someone&rsquo;s codebase in order for you to make your own modifications to it). Serves extremely well as an online software engineering portfolio, which will be talked about more in a later post. 
-* [Bitbucket](http://bitbucket.com): A source code hosting service that is a lot like Github. It generally has a subset of features that Github offers, but it gives students free private repositories, which is pretty cool.
+**Window Management**: Tools that help you efficiently use your screen space.
+* `xmonad`: My only experience with tiling window managers. It tiles windows, and also can be configured quite extensively.
+* Awesome Window Manager / `awm`: Cool people I know use this one too, so it might be worth a try.
+
+
+[last year]: /blog/posts/write-a-function-coop-coop-copo-cpoo-ocop/)
+[reddit thread]: http://www.reddit.com/r/uwaterloo/comments/vzd9u/what_should_i_do_to_prepare_for_my_first_year_in/)
+[tabbr]: https://chrome.google.com/webstore/detail/tabbr/pnlmkddpdkjapnghefahkniilfnodcol
