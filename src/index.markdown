@@ -7,10 +7,14 @@ I study Computer Science at the University of Waterloo and I have a passion for 
 
 I'm currently interested in [helping incoming University of Waterloo frosh prepare for the coop program at waterloo](/blog/posts/preparing-for-uw-coop-part-one), building event apps for a sweet hackathon that&rsquo;s happening in Waterloo this September called [Hack the North](http://hackthenorth.com), and learning enough about algorithms to show a Silicon Valley corporate interviewer that I&rsquo;m awesome this September.
 
-## Contact
+## Portfolios
 
 **Github:** [srcreigh](http://github.com/srcreigh)
 
+**Resume:** [here](/resume.pdf)
+
+
+## Networking and Contact
 **Twitter:** [@srcreigh](http://twitter.com/srcreigh)
 
 **Facebook:** [srcreigh](http://facebook.com/srcreigh)
