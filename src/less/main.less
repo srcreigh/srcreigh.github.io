@@ -30,6 +30,7 @@
 @paragraph-margin-top: 10px;
 
 @full-size: (@sidebar-width * 2 + @inner-holder-width);
+@medium-size: 390px;
 
 .word-wrap() {
   white-space: pre;           /* CSS 2.0 */
@@ -78,6 +79,24 @@ p {
   .serif();
   line-height: 140%;
   margin-top: @paragraph-margin-top;
+}
+
+#sidebar #social {
+  li {
+    color: black;
+    display: inline;
+    font-size: 1.5em;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#sidebar {
+  a .symbol, .symbol {
+    font-family: 'Mono Social Icons Font', Fallback, sans-serif;
+    background-color: transparent;
+  }
 }
 
 code {
@@ -259,9 +278,10 @@ strong { font-weight: bold; }
     position: static;
     padding-right: 0;
     #avatar {
-      width: 80px;
-      height: 80px;
+      width: 130px;
+      height: 130px;
       display: inline-block;
+      float: left;
     }
     #sidebar-holder {
       display: inline-block;
@@ -272,6 +292,10 @@ strong { font-weight: bold; }
     h1 {
       display: inline-block;
       margin-left: 10px;
+    }
+    #social {
+      margin-left: -8px;
+      margin-top: 10px;
     }
     ul {
       margin-left: 10px;
@@ -287,8 +311,23 @@ strong { font-weight: bold; }
     }
   }
 
+  // put the sidebar on top for thin screens
+  @media only screen and (max-width: @medium-size) {
+    margin-right: 0px;
+    width: auto;
+    #avatar {
+      display: none;
+    }
+    #sidebar-holder {
+      width: auto;
+      margin: 0 auto;
+      position: static;
+      display: block;
+    }
+  }
+
   @media only screen and (max-width: (@inner-holder-width + 20px)) {
-    width: 100%;
+    width: auto;
   }
 }
 

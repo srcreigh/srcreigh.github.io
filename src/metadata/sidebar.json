@@ -7,5 +7,20 @@
     { "title": "projects",
       "url": "/projects/"
     }
-  ]  
+  ],
+
+  "social": [
+    { "url": "http://github.com/srcreigh",
+      "icon": "circlegithubalt"
+    },
+    { "url": "http://twitter.com/srcreigh",
+      "icon": "circletwitterbird"
+    },
+    { "url": "http://facebook.com/srcreigh",
+      "icon": "circlefacebook"
+    },
+    { "url": "https://www.linkedin.com/pub/shane-creighton-young/6b/795/58a",
+      "icon": "circlelinkedin"
+    }
+  ]
 }

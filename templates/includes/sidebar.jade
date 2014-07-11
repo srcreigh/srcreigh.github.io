@@ -15,3 +15,9 @@
         else 
           li 
             a(href='#{item.url}') #{item.title}
+
+    ul#social
+      for item in sidebar.social
+        li 
+          a.symbol(href='#{item.url}', target='_blank') #{item.icon}
+
