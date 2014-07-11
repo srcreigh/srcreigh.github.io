@@ -81,6 +81,10 @@ p {
   margin-top: @paragraph-margin-top;
 }
 
+.clearfix {
+  clear: both;
+}
+
 #sidebar #social {
   li {
     color: black;
@@ -88,7 +92,7 @@ p {
     font-size: 1.5em;
     float: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
   }
 }
 
@@ -282,6 +286,9 @@ strong { font-weight: bold; }
       height: 130px;
       display: inline-block;
       float: left;
+    }
+    #social {
+      margin-top: 0px;
     }
     #sidebar-holder {
       display: inline-block;

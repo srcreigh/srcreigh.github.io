@@ -7,21 +7,9 @@ I study Computer Science at the University of Waterloo and I have a passion for 
 
 I'm currently interested in [helping incoming University of Waterloo frosh prepare for the coop program at waterloo](/blog/posts/preparing-for-uw-coop-part-one), building event apps for a sweet hackathon that&rsquo;s happening in Waterloo this September called [Hack the North](http://hackthenorth.com), and learning enough about algorithms to show a Silicon Valley corporate interviewer that I&rsquo;m awesome this September.
 
-## Portfolios
+## Resume & Email
 
-**Github:** [srcreigh](http://github.com/srcreigh)
-
-**Resume:** [here](/resume.pdf)
-
-
-## Networking and Contact
-**Twitter:** [@srcreigh](http://twitter.com/srcreigh)
-
-**Facebook:** [srcreigh](http://facebook.com/srcreigh)
-
-**LinkedIn:** [ca.linkedin.com/pub/shane-creighton-young/6b/795/58a/](http://ca.linkedin.com/pub/shane-creighton-young/6b/795/58a/)
-
-**Email:** srcreigh @ my school&rsquo;s website
+[Here](/resume.pdf) is my resume. You can email me at: srcreigh @ my school&rsquo;s website.
 
 ## [Source](http://github.com/srcreigh/srcreigh.github.io)
 This website is built with a lot of cool new technology: [jade](http://jade-lang.com/), [less](http://lesscss.org), and in particular [Metalsmith](http://metalsmith.io). One of the most exciting part of building this website was learning these technologies and contributing to Metalsmith and its plugin ecosystem.
