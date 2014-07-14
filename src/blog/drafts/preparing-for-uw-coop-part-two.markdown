@@ -15,7 +15,7 @@ The kind of research I spoke about before I sometimes call *microresearch*. This
 
 It was said last time that it&rsquo;s important to know of as many different tools and ideas as you can. THis is important because when you know of a lot of different things, you often know what to learn about when you encounter problems you don&rsquo;t know how to solve. The content of this post focuses on the actionable part of this idea: how to learn things.
 
-I&rsquo;ve split up learning into two categories. The first is structured learning, such as courses, tutorials, or guides, and the second is unstructured learning, which is self-directed research; sometimes figuring things out bit by bit as you encounter a need for it. I&rsquo;ll talk about them both individually first.
+I&rsquo;ve split up learning into two categories. The first is structured learning, such as courses, tutorials, or guides, and the second is unstructured learning, which is self-directed research; this usually involves figuring things out bit by bit as you encounter a need for them. I&rsquo;ll talk about them both individually first.
 
 ### Structured Learning
 
