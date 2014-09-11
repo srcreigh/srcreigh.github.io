@@ -30,5 +30,6 @@ A certain danger when doing structured learning is not applying the knowledge yo
 
 ### Unstructured Learning
 
-Unstructured learning is when you decide to forge your own path to learn about a topic. Although you might incorporate bits from a tutorial here or a chapter from some course as resources in your research, the difference is that it is ultimately you that will decide what to research next. 
+Unstructured learning is when you decide to forge your own path to learn about a topic. Although you might incorporate bits from a tutorial here or a chapter from some course as resources in your research, the difference is that it is ultimately you that will decide what to research next.
 
+This method of learning often isn&rsquo;t suitable for beginners. When starting out with an entirely new subject, there are often barriers to progressing. Intimidation is a real thing. It can be hard to believe that something is possible to learn before it&rsquo;s broken down into small pieces; the final target might make 0 sense until you learn preliminary things.
