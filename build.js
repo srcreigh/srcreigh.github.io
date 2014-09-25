@@ -47,10 +47,9 @@ Metalsmith(__dirname)
     'projects/**': {
       here: 'projects'
     },
-
   }))
 
-  // Compile less and remove the source code from the build
+  // Compile less and remove the less source code from the build
   .use(less({
     render: {
       compress: true
@@ -67,7 +66,7 @@ Metalsmith(__dirname)
   .use(excerpts())
   .use(collections({
     posts: {
-      pattern: 'blog/posts/*.markdown',
+      pattern: 'blog/posts/**.markdown',
       sortBy: 'date',
       reverse: true
     }
@@ -80,7 +79,8 @@ Metalsmith(__dirname)
         return code;
       }
       return highlightjs.highlight(lang, code).value;
-    }
+    },
+    smartypants: true
   }))
   .use(permalinks({
     pattern: ':path/:title',
