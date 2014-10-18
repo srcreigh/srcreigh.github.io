@@ -2,7 +2,6 @@ doctype html
 
 html
   head
-
     if(title)
       title #{global.title} - #{title}
     else
@@ -12,6 +11,7 @@ html
     include includes/analytics.html
 
     include includes/fonts.jade
+
     link(rel='stylesheet', type='text/css', href='/css/reset.css')
     link(rel='stylesheet', type='text/css', href='/css/main.css')
     link(rel='stylesheet', type='text/css', href='/css/social_icons.css')
