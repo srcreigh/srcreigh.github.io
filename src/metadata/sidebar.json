@@ -3,9 +3,6 @@
   "items": [
     { "title": "blog",
       "url": "/blog/"
-    },
-    { "title": "projects",
-      "url": "/projects/"
     }
   ],
 
