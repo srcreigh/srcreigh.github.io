@@ -1,16 +1,9 @@
 ---
 template: post.jade
-title: Hacking the Hackathon Movement: Three Challenges
+title: Hacking the Hackathon Movement Three Challenges
 date: 2014-09-11
 preamble: >
-   The intended audience of this post is the hackathon community at large, but this paragraph is about those
-who aren&rsquo;t. If that&rsquo;s you, then you need to know that we would love to have you join us, and
-that it&rsquo;s very easy to start taking part! Although we talk about techy stuff a lot right now,
-hackathons are ultimately about building things that we can get excited about and that are useful in the
-world around us. This clearly doesn&rsquo;t have to be a website or an app&mdash;so if you are passionate or 
-want to make the world a better place, head on over to 
-<a href="https://facebook.com/groups/hackathonhackers">the Hackathon Hackers facebook group</a> and 
-introduce yourself!
+   The intended audience of this post is the hackathon community at large, but this paragraph is about those who aren&rsquo;t. If that&rsquo;s you, then you need to know that we would love to have you join us, and that it&rsquo;s very easy to start taking part! Although we talk about techy stuff a lot right now, hackathons are ultimately about building things that we can get excited about and that are useful in the world around us. This clearly doesn&rsquo;t have to be a website or an app&mdash;so if you are passionate or want to make the world a better place, head on over to <a href="https://facebook.com/groups/hackathonhackers">the Hackathon Hackers facebook group</a> and introduce yourself!
 ---
 
 We as a hackathon community have seen hundreds of hackathons. We&rsquo;re going see tens more 
