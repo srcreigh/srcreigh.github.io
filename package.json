@@ -14,7 +14,7 @@
     "highlight.js": "~8.0.0"
   },
   "scripts": {
-    "build": "nodejs ./build.js",
+    "build": "node ./build.js",
     "deploy": "npm run build && cd ./build && git init . && git add -A && git commit -m \"Deploy `date`\" && git push 'ssh://git@github.com/srcreigh/srcreigh.github.io.git' master --force && rm -rf .git && cd ..",
     "postinstall": "./.postinstall.sh"
   }
