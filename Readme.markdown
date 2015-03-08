@@ -3,7 +3,7 @@
 and [current build](http://github.com/srcreigh/srcreigh.github.io/tree/master)
 for my website and its articles.
 
-Copyright (C) Shane Creighton-Young 2014 except where otherwise noted.
+Copyright (C) Shane Creighton-Young 2015 except where otherwise noted.
 All rights reserved.
 
 ### Setup instructions
