@@ -10,7 +10,7 @@ All rights reserved.
 
 Install npm. Clone the repo. Then:
 
-```
+```bash
 # install dependencies
 npm install
 
@@ -25,7 +25,7 @@ npm run deploy
 The [http-server](https://www.npmjs.com/package/http-server) npm package is a
 zero-configuration command line server. To use it:
 
-```
+```bash
 npm install -g http-server
 
 cd $PATH_TO_REPO_ROOT
