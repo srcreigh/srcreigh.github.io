@@ -34,20 +34,6 @@ Metalsmith(__dirname)
     global: "metadata/global.json",
     sidebar: "metadata/sidebar.json"
   }))
-  .use(give({
-    options: {
-      matchBase: true
-    },
-    'blog/**': {
-      here: 'blog'
-    },
-    'hire/**': {
-      here: 'hire'
-    },
-    'projects/**': {
-      here: 'projects'
-    },
-  }))
 
   // Compile less and remove the less source code from the build
   .use(less({

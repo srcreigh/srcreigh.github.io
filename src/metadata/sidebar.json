@@ -1,14 +1,5 @@
 
 {
-  "items": [
-    { "title": "blog",
-      "url": "/blog/"
-    },
-    { "title": "projects",
-      "url": "/projects/"
-    }
-  ],
-
   "social": [
     { "url": "http://github.com/srcreigh",
       "icon": "circlegithubalt"
