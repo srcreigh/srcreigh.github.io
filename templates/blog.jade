@@ -2,7 +2,6 @@ doctype html
 
 html
   head
-
     if(title)
       title #{global.title} - #{title}
     else
@@ -12,28 +11,25 @@ html
     include includes/analytics.html
 
     include includes/fonts.jade
+    include includes/highlightjs.jade
+
     link(rel='stylesheet', type='text/css', href='/css/reset.css')
     link(rel='stylesheet', type='text/css', href='/css/main.css')
     link(rel='stylesheet', type='text/css', href='/css/social_icons.css')
 
   body
-    #outer-holder
-      #inner-holder
+    .container
+      //- sidebar div
+      include includes/sidebar.jade
 
-        //- sidebar div
-        include includes/sidebar.jade
+      #content
+        h1 Posts
+        for post in posts
 
-        #content
-          #blog
-            h1 Posts
-            for post in posts
-
-              //- this is so ugly, but I can't think of another way to exclude
-              //- this file from the collection
-              if (post.title != 'Shane Creighton-Young\'s Blog')
-                h2 
-                  a(href='/#{post.path}') #{post.title}
-                p !{post.excerpt}
-
-
+          //- this is so ugly, but I can't think of another way to exclude
+          //- this file from the collection
+          if (post.title != 'Shane Creighton-Young\'s Blog')
+            h2 
+              a(href='/#{post.path}') #{post.title}
+            p !{post.excerpt}
 

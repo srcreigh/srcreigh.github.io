@@ -11,26 +11,25 @@
 @link-color: darken(@main-color, 10%);
 @link-visited-color: darken(@dark-color, 5%);
 
-/* positioning constants */
-@sidebar-width: 225px;
-@sidebar-inside-margin: 20px;
-@sidebar-inside-padding: @sidebar-inside-margin;
-@sidebar-divider-width: 0;
+/* margin between edges of the screen and different elements */
+@gutter-width: 20px;
 
-@inner-holder-width: 600px;
-@inner-holder-border-width: 0;
-@inner-holder-margin-top: 20px;
+@lg-avatar-size: 150px;
+@lg-content-width: 500px;
+@lg-sidebar-width: 200px;
+@lg-container-width: (@lg-sidebar-width + @lg-content-width 
+        + 2 * @gutter-width);
 
-/* the sidebar and the inner-holder should both have a padding so that
-   the divider pokes up a bit */
-@padding-top: 14px;
+@md-avatar-size: 80px;
+@md-max-width: @lg-container-width;
+@md-content-width: @lg-content-width;
+@md-sidebar-width: @lg-content-width;
+
+@sm-max-width: (@md-content-width + 2 * @gutter-width);
 
 /* the margin that goes above each paragraph and other paragraph-like
    element */
 @paragraph-margin-top: 10px;
-
-@full-size: (@sidebar-width * 2 + @inner-holder-width);
-@medium-size: 390px;
 
 .word-wrap() {
   white-space: pre;           /* CSS 2.0 */
@@ -50,6 +49,7 @@
 .serif() {
   font-family: 'PT Serif', 'Georgia', serif;
 }
+
 
 .sans-serif() {
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -75,7 +75,7 @@ body {
   .serif();
 }
 
-p {
+#content p {
   .serif();
   line-height: 140%;
   margin-top: @paragraph-margin-top;
@@ -91,9 +91,8 @@ p {
     color: black;
     display: inline;
     font-size: 1.3em;
-    float: none;
     margin: 0;
-    padding: 10px 0 0 0;
+    padding-top: 10px;
   }
 }
 
@@ -190,10 +189,6 @@ strong { font-weight: bold; }
   .here {
     background-color: @light-color;
   }
-
-  @media only screen and (max-width: @full-size) {
-    text-align: left;
-  }
 }
 
 #content {
@@ -204,7 +199,7 @@ strong { font-weight: bold; }
   }
 
   ol, ul {
-    margin-top: @paragraph-margin-top;
+    //margin-top: @paragraph-margin-top;
   }
 
   li {
@@ -219,43 +214,7 @@ strong { font-weight: bold; }
 #blog h2:first-child { margin-top: 0px; }
 
 
-/*
- * CONTAINER POSITIONING
- */
-#outer-holder {
-  position: relative;
-  width: @inner-holder-width;
-  margin: 0px auto;
-  margin-top: @inner-holder-margin-top;
-  
-  @media only screen and (max-width: (@inner-holder-width + 20px)) {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: auto;
-    margin-top: 0;
-  }
-}
-#inner-holder {
-  padding-top: @padding-top;
-}
 #sidebar {
-  position: absolute;
-  width: @sidebar-width;
-
-  /* this sidebar will be vertically displaced by the width
-     of the inner-holder's border without this */
-  top: -(@inner-holder-border-width);
-
-  /* align the sidebar with the left side of the inner-holder */
-  right: @inner-holder-width + @inner-holder-border-width;
-
-  /* put some margin, padding inside with a separator */
-  margin-right: @sidebar-inside-margin;
-  padding-right: @sidebar-inside-padding;
-  border-right: @sidebar-divider-width @light-color solid;
-  /* extend the separator a bit at the top and bottom */
-  padding-top: @padding-top;
-  padding-bottom: 20px;
 
   h1 {
     margin-top: 20px;
@@ -265,77 +224,15 @@ strong { font-weight: bold; }
     margin-top: 5px;
     list-style: none;
     li {
-      float: right;
       width: 150px;
 
-      padding: 5px;
+      padding-top: 5px;
       margin-top: 10px;
       a { 
         font-size: 1.3em; 
         padding: 5px;
       }
     }
-  }
-
-  // put the sidebar on top for thin screens
-  @media only screen and (max-width: @full-size) {
-    width: @inner-holder-width;
-    position: static;
-    padding-right: 0;
-    #avatar {
-      width: 130px;
-      height: 130px;
-      display: inline-block;
-      float: left;
-    }
-    #social {
-      margin-top: 0px;
-    }
-    #sidebar-holder {
-      display: inline-block;
-      position: relative;
-      top: -12px;
-      left: 10px;
-    }
-    h1 {
-      display: inline-block;
-      margin-left: 10px;
-    }
-    #social {
-      margin-left: -8px;
-      margin-top: 10px;
-    }
-    ul {
-      margin-left: 10px;
-      margin-top: 15px;
-      li {
-        float: none;
-        display: inline;
-        margin-left: 10px;
-      }
-      li:first-child {
-        margin-left: 0;
-      }
-    }
-  }
-
-  // put the sidebar on top for thin screens
-  @media only screen and (max-width: @medium-size) {
-    margin-right: 0px;
-    width: auto;
-    #avatar {
-      display: none;
-    }
-    #sidebar-holder {
-      width: auto;
-      margin: 0 auto;
-      position: static;
-      display: block;
-    }
-  }
-
-  @media only screen and (max-width: (@inner-holder-width + 20px)) {
-    width: auto;
   }
 }
 
@@ -344,16 +241,89 @@ strong { font-weight: bold; }
  * 
  */
 .video-container {
-  position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px; height: 0; overflow: hidden;
 
   iframe, object, embed {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
 }
- 
+
+/*******************************************************************************
+ * POSITIONING - LARGE
+ ******************************************************************************/
+.container {
+  width: @lg-container-width;
+  margin: @gutter-width auto;
+}
+
+#sidebar {
+  width: @lg-sidebar-width;
+  margin-right: @gutter-width;
+  float: left;
+  
+  #avatar {
+    height: @lg-avatar-size;
+    width: @lg-avatar-size;
+  }
+}
+
+#content {
+  width: @lg-content-width;
+  margin-left: @lg-sidebar-width + @gutter-width;
+}
+
+/*******************************************************************************
+ * POSITIONING - MEDIUM 
+ ******************************************************************************/
+@media(max-width: @md-max-width) {
+  .container {
+    position: absolute;
+    top: @gutter-width;
+    right: @gutter-width;
+    bottom: @gutter-width;
+    left: @gutter-width;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  #content {
+    width: @md-content-width;
+    margin: 0 auto;
+    clear: both;
+  }
+
+  #sidebar {
+    width: @md-content-width;
+    margin: 0 auto @gutter-width auto;
+    float: none;
+    overflow: hidden;
+
+    #avatar {
+      float: left;
+      width: @md-avatar-size;
+      height: @md-avatar-size;
+    }
+
+    #name {
+      margin-top: 0;
+    }
+
+    #sidebar-holder {
+      float: left;
+    }
+  }
+}
+
+/*******************************************************************************
+ * POSITIONING - SMALL
+ ******************************************************************************/
+@media(max-width: @sm-max-width) {
+  #content {
+    width: auto;
+  }
+}
