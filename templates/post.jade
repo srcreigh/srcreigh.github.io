@@ -15,19 +15,18 @@ html
 
     link(rel='stylesheet', type='text/css', href='/css/reset.css')
     link(rel='stylesheet', type='text/css', href='/css/main.css')
-    link(rel="stylesheet", type="text/css", href="/css/social_icons.css", media="all")
+    link(rel='stylesheet', type='text/css', href='/css/social_icons.css' media='all')
 
-    #outer-holder
-      #inner-holder
+  body
+    #container
+      //- sidebar div
+      include includes/sidebar.jade
 
-        //- sidebar div
-        include includes/sidebar.jade
+      #content
+        h1 #{title}
 
-        #content
-          h1 #{title}
+        #preamble 
+          p !{preamble}
 
-          #preamble 
-            p !{preamble}
-
-          //- !{...} doesn't escape the contents of the variable
-          span !{contents}
+        //- !{...} doesn't escape the contents of the variable
+        span !{contents}
