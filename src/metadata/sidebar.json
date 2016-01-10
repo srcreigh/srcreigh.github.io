@@ -2,16 +2,16 @@
 {
   "social": [
     { "url": "http://github.com/srcreigh",
-      "icon": "circlegithubalt"
+      "name": "github"
     },
     { "url": "http://twitter.com/srcreigh",
-      "icon": "circletwitterbird"
+      "name": "twitter"
     },
     { "url": "http://facebook.com/srcreigh",
-      "icon": "circlefacebook"
+      "name": "facebook"
     },
     { "url": "https://www.linkedin.com/pub/shane-creighton-young/6b/795/58a",
-      "icon": "circlelinkedin"
+      "name": "linkedin"
     }
   ]
 }

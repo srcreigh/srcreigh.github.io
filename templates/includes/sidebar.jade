@@ -1,7 +1,5 @@
 
 #sidebar
-  img#avatar(src='/img/me.png', alt='Shane Creighton-Young')
-
   #sidebar-holder
     h1#name
       a(href='/') #{global.title}
@@ -9,5 +7,5 @@
     ul#social
       for item in sidebar.social
         li 
-          a.symbol(href='#{item.url}', target='_blank') #{item.icon}
+          a(href='#{item.url}', target='_blank') #{item.name}
 
