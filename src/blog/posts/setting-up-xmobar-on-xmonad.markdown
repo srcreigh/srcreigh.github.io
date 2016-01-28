@@ -2,6 +2,7 @@
 template: post.jade
 title: Setting up xmobar on xmonad
 date: 2013-06-15
+prettydate: June 15, 2013
 tags:
 - xmonad
 - xmobar

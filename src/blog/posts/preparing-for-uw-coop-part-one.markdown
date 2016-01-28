@@ -1,6 +1,7 @@
 ---
 title: Preparing for UW Co-op, Part I
 date: 2014-06-18
+prettydate: June 18, 2014
 template: post.jade
 preamble: This is the first post of several that I am writing with the help of my friends Charles Lin, Evy Kassirer, Liam Horne, and others. This series is being released in order to help incoming University of Waterloo Computer Science or Software Engineering students prepare for the competitive co-op program at Waterloo.
 ---

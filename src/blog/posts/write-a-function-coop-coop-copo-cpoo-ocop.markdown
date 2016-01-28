@@ -3,6 +3,7 @@ template: post.jade
 title: Write a function, Coop => {Coop, Copo, Cpoo, oCop, oCpo, ooCp, oopC, opCo,
   opoC, pCoo, poCo, pooC}
 date: 2013-07-17
+prettydate: July 17, 2013
 tags:
 - university of waterloo
 - resume

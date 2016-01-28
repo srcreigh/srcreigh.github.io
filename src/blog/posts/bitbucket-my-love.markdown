@@ -2,6 +2,7 @@
 template: post.jade
 title: BitBucket, my love
 date: 2013-07-18
+prettydate: July 18, 2013
 tags: []
 tumblr_url: http://srcreigh.tumblr.com/post/55752910672/bitbucket-my-love
 ---

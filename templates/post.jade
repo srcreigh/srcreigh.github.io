@@ -3,30 +3,16 @@ doctype html
 html
   head
     if(title)
-      title #{global.title} - #{title}
+      title S. C. Young - #{title}
     else
-      title #{global.title}
+      title S. C. Young
 
-    include includes/meta.jade
-    include includes/analytics.html
-
-    include includes/fonts.jade
-    include includes/highlightjs.jade
-
-    link(rel='stylesheet', type='text/css', href='/css/reset.css')
-    link(rel='stylesheet', type='text/css', href='/css/main.css')
-    link(rel='stylesheet', type='text/css', href='/css/social_icons.css' media='all')
+    link(rel='stylesheet', type='text/css', href='/reset.css')
+    link(rel='stylesheet', type='text/css', href='/style.css')
 
   body
-    #container
-      //- sidebar div
-      include includes/sidebar.jade
-
-      #content
-        h1 #{title}
-
-        #preamble 
-          p !{preamble}
-
-        //- !{...} doesn't escape the contents of the variable
-        span !{contents}
+    include includes/sidebar.jade
+    #content
+      .date !{prettydate}
+      h1 #{title}
+      span !{contents}

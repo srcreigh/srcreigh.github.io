@@ -1,11 +1,21 @@
 
 #sidebar
-  #sidebar-holder
-    h1#name
-      a(href='/') #{global.title}
+  h1
+    a(href="/") S. C. Young
 
-    ul#social
-      for item in sidebar.social
-        li 
-          a(href='#{item.url}', target='_blank') #{item.name}
+  ol
+    li
+      a(href="/essays") Essays
+    li
+      a(href="/journal") Journal
+    li
+      a(href="/blog") Old Posts
 
+  ol
+    li
+      a(href="/resume.pdf") Resume
+    li
+      a(href="https://fb.com/srcreigh") Facebook
+    li
+      a(href="https://github.com/srcreigh") Github
+  

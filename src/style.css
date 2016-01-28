@@ -1,0 +1,106 @@
+
+
+/* SHARED RULES */
+h1, h2, h3 {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 40px;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+}
+
+/* SIDEBAR RULES */
+
+#sidebar {
+  float: left;
+  width: 150px;
+  margin-left: 40px;
+}
+
+#sidebar ol {
+  padding-top: 10px;
+}
+
+#sidebar h1 + ol {
+  padding-top: 0px;
+}
+
+#sidebar a, #sidebar a:visited, #sidebar a:hover, #sidebar a:active {
+  color: inherit;
+}
+
+#sidebar h1 a {
+  text-decoration: none;
+}
+
+/* CONTENT RULES */
+
+#content h1 + p, #content h1 + h2 {
+  padding-top: 10px;
+}
+
+#content strong {
+  font-weight: bold;
+}
+
+#content em {
+  font-style: italic;
+}
+
+#content code {
+  font-family: 'Courier New', monospace;
+}
+
+#content pre {
+  padding-top: 15px;
+  font-size: 0.8em;
+}
+
+li {
+  padding-top: 10px;
+}
+
+#content {
+  width: 400px;
+  float: left;
+  font-size: 14pt;
+  margin-bottom: 40px;
+}
+
+#content ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+#content h1, #content h3 {
+  text-align: center;
+}
+
+#content p:first-child {
+  padding-top: 10px;
+}
+
+#content .date + h1 {
+  padding-top: 10px;
+}
+
+#content p {
+  padding-top: 15px;
+  line-height: 1.2em;
+}
+
+#content .subtitle {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+#content .date {
+  font-style: italic;
+  text-align: right;
+  padding-top: 40px;
+}
+

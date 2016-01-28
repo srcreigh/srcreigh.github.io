@@ -2,6 +2,7 @@
 template: post.jade
 title: 8tracks, meet mpd. mpd, meet 8tracks.
 date: 2013-08-17
+prettydate: August 17, 2013
 tags:
 - 8tracks
 - download

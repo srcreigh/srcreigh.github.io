@@ -1,6 +1,7 @@
 ---
 title: Modular UIViewController Features
 date: 2014-05-11
+prettydate: May 11, 2014
 template: post.jade
 preamble: > 
     This article is an edited version of a University of Waterloo work term

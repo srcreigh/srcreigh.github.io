@@ -29,12 +29,6 @@ Metalsmith(__dirname)
     }
   }))
 
-  // Metadata
-  .use(metadata({
-    global: "metadata/global.json",
-    sidebar: "metadata/sidebar.json"
-  }))
-
   // Compile less and remove the less source code from the build
   .use(less({
     render: {
@@ -59,13 +53,6 @@ Metalsmith(__dirname)
   }))
 
   .use(markdown({
-    highlight: function(code, lang){
-      if (lang != 'objectivec') {
-        console.log('can\'t print lang for code ' + code);
-        return code;
-      }
-      return highlightjs.highlight(lang, code).value;
-    },
     smartypants: true
   }))
   .use(permalinks({
