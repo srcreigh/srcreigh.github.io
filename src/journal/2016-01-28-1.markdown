@@ -1,0 +1,127 @@
+---
+template: post.jade
+date: 2016-01-28
+prettydate: January 28, 2016
+title: Learning is Stressful, Martha Nussbaum is Good, and Help Me
+---
+
+Yesterday I made the following [facebook
+status](https://www.facebook.com/srcreigh/posts/859462034166558):
+
+> I hate that school forces me to learn five to seven separate sets of concepts in
+> parallel, spread over four months. I could have accomplished all the things I
+> accomplished in Waterloo's algorithms class in a couple weeks. I could have
+> built the operating system that my operating systems class required me to build
+> in a couple weeks. Yet I am forced to perform a "mental context switch" several
+> times per day just in order to keep up with seven courses in parallel. What is
+> beneficial about this? No "sane" person would read five fiction books by reading
+> ch. 1 of the first book, followed by ch. 1 of the second book, etc., yet this is
+> exactly what my school expects me to do. No wonder I am "insane".
+
+It can feel good to complain, but this kind of thinking on its own is harmful.
+The danger is that a sufficiently creative person can just say that every single
+kind existence is bad for some reason&mdash;and then not exist in any meaningful
+way.  The goal should be understanding, forming hypothesis about how to do it
+better, and testing them. The relevant (and challenging) questions, then, are
+what "it" is, and what "better" could be.
+
+Having to do with education, these questions are contentious. One might study to
+get a job, or to achieve great things, or to find inner purpose, or as a matter
+of pride, or to please one's parents, or to support them financially, or some
+combination of these&mdash;suffice it to say that education has a multiplicity
+of functions. To understand education, then, is to identify each of its
+functions, and figure out how they are related to one another.
+
+This proto-analysis is similar to (and, in fact, heavily inspired by) Martha
+Nussbaum's famous treatment of what is perhaps the most politically charged
+concept in Western society today: objectification. Nussbaum writes of America in
+1995 that to many, objectification is an idea "used to criticize
+advertisements... [and] to express skepticism about the attitudes of one person
+to another;"<sup><a href="#note-1">1</a></sup> things haven't changed much
+since. Nussbaum gives several examples of sexual objectification in literature.
+Although she finds several to be morally questionable, she notes that "at least
+one of the texts shows how objectification of a kind might be quite harmless and
+even pleasant."<sup><a href="#note-2">2</a></sup> This is curious.  What is it
+about some forms of objectification that make it okay, when so many others are,
+well, disgusting?
+
+Nussbaum, in answering this question, doesn't make one big cut down the middle,
+but "suggest[s] that *at least seven* notions are involved in [the] idea [of
+objectification]."<sup><a href="#note-3">3</a></sup> *Seven*? Or *more*? There
+is real *structure* to the concept of objectification, says Nussbaum! Not a
+simple structure, no, but a complex and nuanced one! It doesn't matter if
+you're talking about objectification as in denial of autonomy, or as in
+can-be-owned, or as in is-replacable&mdash;Nussbaum's analysis handles it all,
+and this way *transcends contention*. Only a careful look at how different
+"corners" of this structure function in human interaction allows us to
+understand the concept of objectification as a whole and form general insights.
+
+There is no reason to think that similar analysis can't be applied elsewhere to
+that effect. Clearly, education is often a good thing&mdash;but if were always a
+good thing, why do the compaints at the top seem to be warranted?  Fortunately,
+following Nussbaum, we know how to deal with contentious things that are
+sometimes good and sometimes bad.
+
+Above, we explored the structure of one's reasons for being educated. Is there
+structure in what it means to be educated?  I think there is. Being educated
+doesn't always mean having knowledge&mdash;it can also mean being associated
+with a prestigious institution, having relevant experience or portfolios, being
+certified by law (in the case of lawyers and doctors,) etc. Even knowledge comes
+in many forms. Mathematics and dancing, for instance, are different enough kinds
+of knowledge that we should never assume a mathematician could dance, or that a
+dancer could do mathematics.<sup><a href="#note-4">4</a></sup>
+
+Now that we've given structure to the issue of education, we're better equipped
+to form hypotheses. It's easy. Here are three:
+
+1. Prestigious education doesn't necessary imply having knowledge, but people
+   often believe so.
+2. For many jobs, a solid portfolio seems to be as sufficient for getting an
+   interview as having prestige.
+3. Lectures aren't the only way to learn mathematics, but lectures are also
+   useful for learning why someone like your professor devoted their lives to
+   the subject.
+
+We can start even to think about the original issue without contention:
+
+- Are there methods of educating oneself that achieve all the ends one is
+  seeking, but don't require performing many "context switches" per day?
+- What are all the different ways of "evaluating education"&mdash;knowing when
+  one has become "more educated" or when one method of education is more
+  "effective" than another&mdash;and which of these require the "context switch"
+  kind of learning?
+
+This is a "bring your own perspective" kind of analysis. It doesn't require one
+to accept this or that definition of "education" or of "betterness"&mdash;it
+accounts for all of them.
+
+This is useful because people have different perspectives sometimes, clearly;
+but also because people&mdash;change. When I started school at 18, I truly
+wasn't concerned with financially supporting my parents, I didn't need any more
+inner purpose, and was excited about achieving "cool" things. In each respect
+the tables have turned. I've felt how cool achievements do not reward in
+proportion to the suffering that often goes into making them happen; absent the
+naive expectation that collecting cool achievements will be rewarding I've been
+needing a new "inner purpose"; and as my perspective continues to change over
+the years I've seen how my parent's financial stresses have consumed them to the
+effect that theirs haven't at all&mdash;it's important that I figure this out.
+
+The sentiment I expressed in my facebook status felt right, in one capacity or
+another, to more than 30 people. This is a worthwhile indication that the
+phenomenon should be studied. It's fortunate we have "Nussbaumian" tools of
+thought which not only help us prepare for changes in our perspective tomorrow,
+but give us the ability to value each other's perspectives today.
+
+The discussion continues [in the original
+post](https://www.facebook.com/srcreigh/posts/859462034166558) and [via private
+message](https://www.facebook.com/srcreigh).
+
+### Notes
+1. <span id="note-1">Martha Nussbaum, *Philosophy and Public Affairs*, Fall 1995, pp. 249.
+   [](http://www.mit.edu/~shaslang/mprg/nussbaumO.pdf)</span>
+2. <span id="note-2">Nussbaum, pp. 256.</span>
+3. <span id="note-3">Nussbaum, pp. 257; emphasis mine.</span>
+4. <span id="note-4">Some training, however, does seem to be transferable: a
+   mathematician can be reasonably expected to make a capable programmer, for
+   instance.</span>
+

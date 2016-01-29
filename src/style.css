@@ -39,7 +39,7 @@ body {
 
 /* CONTENT RULES */
 
-#content h1 + p, #content h1 + h2 {
+#content h1 + p, #content h2 + p, #content h1 + h2, #content h1 + blockquote {
   padding-top: 10px;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 #content code {
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", Courier, "Nimbus Mono L", monospace;
 }
 
 #content pre {
@@ -73,7 +73,12 @@ li {
 
 #content ul {
   list-style-type: circle;
-  padding-left: 20px;
+  padding-left: 30px;
+}
+
+#content ol {
+  list-style-type: decimal;
+  padding-left: 30px;
 }
 
 #content h1, #content h3 {
@@ -102,5 +107,29 @@ li {
   font-style: italic;
   text-align: right;
   padding-top: 40px;
+}
+
+#content blockquote {
+  font-style: italic;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#content blockquote em {
+  font-style: normal;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.3em;
+}
+
+sub {
+  bottom: -0.25em;
 }
 

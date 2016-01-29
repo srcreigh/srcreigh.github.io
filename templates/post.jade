@@ -15,4 +15,6 @@ html
     #content
       .date !{prettydate}
       h1 #{title}
+      if(preamble)
+        blockquote !{preamble}
       span !{contents}

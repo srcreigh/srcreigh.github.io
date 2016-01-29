@@ -27,8 +27,8 @@ Master* (Hunt, 2000) writes,
 > two or three different representations will most likely fall out of step with 
 > each other. Even if they don't, you're guaranteeing yourself the headache of 
 > maintaining them in parallel whenever a change occurs. And change will occur. 
-> [The &#8220;don't repeat yourself&#8221; software engineering principle] is 
-> important if you want flexible and maintainable software.
+> <em>[The &#8220;don't repeat yourself&#8221; software engineering 
+> principle]</em> is important if you want flexible and maintainable software.
 
 Base classes are one strategy for writing modular controllers. This is well 
 suited for framework-level functionality that a team would like to be available

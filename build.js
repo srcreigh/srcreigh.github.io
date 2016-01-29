@@ -49,6 +49,11 @@ Metalsmith(__dirname)
       pattern: 'blog/posts/**.markdown',
       sortBy: 'date',
       reverse: true
+    },
+    journal: {
+      pattern: 'journal/**.markdown',
+      sortBy: 'date',
+      reverse: true
     }
   }))
 

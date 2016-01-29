@@ -3,7 +3,7 @@ title: Preparing for UW Co-op, Part I
 date: 2014-06-18
 prettydate: June 18, 2014
 template: post.jade
-preamble: This is the first post of several that I am writing with the help of my friends Charles Lin, Evy Kassirer, Liam Horne, and others. This series is being released in order to help incoming University of Waterloo Computer Science or Software Engineering students prepare for the competitive co-op program at Waterloo.
+preamble: I wrote this post with the help of various friends, including Charles Lin, Evy Kassirer, and Liam Horne. Although it never turned into a series, it remains useful. Incoming University of Waterloo Computer Science or Software Engineering students, upon reading it, should "know of" more things.
 ---
 
 All throughout the year, students like myself from the University of Waterloo who study Computer Science, Software Engineering, and related programs are co-oping (Americans, read: interning) all around North America. From Canadian companies like Shopify, Kik and Thalmic Labs to big-name Silicon Valley companies such as Google, Microsoft and Apple to startups going through Y-Combinator, you'll find students from the University of Waterloo. I think this is fantastic, and I am very pleased to be a part of it all. 

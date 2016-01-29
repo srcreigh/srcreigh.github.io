@@ -14,7 +14,10 @@ html
     include includes/sidebar.jade
     #content
       h1 Journal
-      p There is nothing here yet.
+      for entry in journal
+        h2
+          a(href='/#{entry.path}') #{entry.title}
+        .subtitle #{entry.prettydate}
 
 
 
