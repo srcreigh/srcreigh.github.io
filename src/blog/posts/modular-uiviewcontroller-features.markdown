@@ -12,11 +12,11 @@ preamble: >
     in those 8 months.
 ---
 
-In iOS mobile applications, `UIViewController` subclasses are often
-the largest and most complex source code files in a project repository.
-Complexity arises naturally from the nature of the features that 
-controllers contain; syncing up to multiple data sources to show content
-to a user, performing image processing in the background, etc. This makes 
+<span class="small">In iOS mobile applications</span>, `UIViewController`
+subclasses are often the largest and most complex source code files in a project
+repository.  Complexity arises naturally from the nature of the features that
+controllers contain; syncing up to multiple data sources to show content to a
+user, performing image processing in the background, etc. This makes
 `UIViewController` a prime candidate for careful modular design. 
 
 Modular code is a crucial aspect of a maintainable codebase. Dave Thomas, 

@@ -21,7 +21,7 @@ body {
   margin-left: 40px;
 }
 
-#sidebar ol {
+#sidebar ol, #sidebar li {
   padding-top: 10px;
 }
 
@@ -39,7 +39,8 @@ body {
 
 /* CONTENT RULES */
 
-#content h1 + p, #content h2 + p, #content h1 + h2, #content h1 + blockquote {
+#content h1 + p, #content h2 + p, #content h1 + h2, #content h1 + blockquote,
+#content blockquote + p {
   padding-top: 10px;
 }
 
@@ -60,15 +61,21 @@ body {
   font-size: 0.8em;
 }
 
-li {
+#content li {
   padding-top: 10px;
+}
+
+#content li:first-child {
+  padding-top: 0px;
 }
 
 #content {
   width: 400px;
   float: left;
   font-size: 14pt;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #content ul {
@@ -89,13 +96,21 @@ li {
   padding-top: 10px;
 }
 
+#content .small {
+  font-variant: small-caps;
+}
+
 #content .date + h1 {
   padding-top: 10px;
 }
 
-#content p {
+#content p, #content blockquote, #content ol, #content ul {
   padding-top: 15px;
   line-height: 1.25;
+}
+
+#content blockquote p:first-child {
+  padding-top: 0px;
 }
 
 #content .subtitle {
