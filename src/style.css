@@ -4,29 +4,30 @@
 h1, h2, h3 {
   font-family: "Arial", sans-serif;
   font-weight: bold;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  padding-top: 40px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 3em;
 }
 
 body {
   font-family: "Times New Roman", serif;
+  font-size: 24px;
 }
 
 /* SIDEBAR RULES */
 
 #sidebar {
   float: left;
-  width: 150px;
-  margin-left: 40px;
+  width: 10em;
+  margin-left: 3em;
 }
 
 #sidebar ol, #sidebar li {
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 
 #sidebar h1 + ol {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 #sidebar a, #sidebar a:visited, #sidebar a:hover, #sidebar a:active {
@@ -41,7 +42,7 @@ body {
 
 #content h1 + p, #content h2 + p, #content h1 + h2, #content h1 + blockquote,
 #content blockquote + p {
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 
 #content strong {
@@ -57,35 +58,34 @@ body {
 }
 
 #content pre {
-  padding-top: 15px;
+  padding-top: 0.75em;
   font-size: 0.8em;
 }
 
 #content li {
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 
 #content li:first-child {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 #content {
-  width: 400px;
+  width: 25em;
   float: left;
-  font-size: 14pt;
-  padding-bottom: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-bottom: 3em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 #content ul {
   list-style-type: circle;
-  padding-left: 30px;
+  padding-left: 2em;
 }
 
 #content ol {
   list-style-type: decimal;
-  padding-left: 30px;
+  padding-left: 2em;
 }
 
 #content h1, #content h3 {
@@ -93,7 +93,7 @@ body {
 }
 
 #content p:first-child {
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 
 #content .small {
@@ -101,33 +101,33 @@ body {
 }
 
 #content .date + h1 {
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 
 #content p, #content blockquote, #content ol, #content ul {
-  padding-top: 15px;
+  padding-top: 0.75em;
   line-height: 1.25;
 }
 
 #content blockquote p:first-child {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 #content .subtitle {
   font-style: italic;
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 
 #content .date {
   font-style: italic;
   text-align: right;
-  padding-top: 40px;
+  padding-top: 3em;
 }
 
 #content blockquote {
   font-style: italic;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 #content blockquote em {
