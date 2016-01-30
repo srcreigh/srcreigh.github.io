@@ -106,7 +106,7 @@ body {
 
 #content p, #content blockquote, #content ol, #content ul {
   padding-top: 0.75em;
-  line-height: 1.25;
+  line-height: 1.3em;
 }
 
 #content blockquote p:first-child {
