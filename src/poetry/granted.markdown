@@ -27,4 +27,4 @@ and, granted, it was well-drawn,
 for a sketch in a book for sketches by drunks,  
 but to be honest, honestly, I wish  
 he'd not drawn in the coloring book for drunks  
-where I said my friend was, at least
+where I said my friend was, at least.
