@@ -22,7 +22,11 @@ body {
   margin-left: 3em;
 }
 
-#sidebar ol, #sidebar li {
+#sidebar h1 a {
+  text-decoration: none;
+}
+
+#sidebar li, #sidebar ol {
   padding-top: 0.5em;
 }
 
@@ -32,10 +36,6 @@ body {
 
 #sidebar a, #sidebar a:visited, #sidebar a:hover, #sidebar a:active {
   color: inherit;
-}
-
-#sidebar h1 a {
-  text-decoration: none;
 }
 
 /* CONTENT RULES */
