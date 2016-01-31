@@ -1,0 +1,25 @@
+doctype html
+
+html
+  head
+    if(title)
+      title S. C. Young - #{title}
+    else
+      title S. C. Young
+
+    include includes/css.jade
+    include includes/analytics.jade
+
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+  body
+    include includes/sidebar.jade
+    #content
+      h1 Poetry
+      for poem in poetry
+        h2
+          a(href='/#{poem.path}') #{poem.title}
+        .subtitle #{poem.prettydate}
+
+
+
