@@ -19,13 +19,13 @@ and he was&mdash;
 
 until, in his place,  
 I saw that Grant, a new friend,  
-had began sketching something:  
+had begun sketching something:  
 a pint of an ale or a stout or piss or something,  
 or&mdash;something&mdash;
 
 &mdash;
 
-Granted, it was well-drawn,  
+Granted, it was well drawn,  
 for a sketch in a book for sketches by drunks,  
 but to be honest, honestly,  
 I wish he'd not drawn in the coloring book  
