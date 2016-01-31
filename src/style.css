@@ -11,7 +11,7 @@ h1, h2, h3 {
 
 body {
   font-family: "Times New Roman", serif;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 /* SIDEBAR RULES */
@@ -71,7 +71,7 @@ body {
 }
 
 #content {
-  width: 25em;
+  width: 22em;
   float: left;
   padding-bottom: 3em;
   padding-left: 0.75em;
