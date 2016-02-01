@@ -85,6 +85,10 @@ body {
   padding-right: 0.75em;
 }
 
+#content.poem {
+  width: 45ch;
+}
+
 #content ul {
   list-style-type: circle;
   padding-left: 2em;

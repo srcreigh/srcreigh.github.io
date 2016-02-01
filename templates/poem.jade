@@ -1,0 +1,21 @@
+doctype html
+
+html
+  head
+    if(title)
+      title S. C. Young - #{title}
+    else
+      title S. C. Young
+
+    include includes/css.jade
+    include includes/analytics.jade
+
+  body
+    include includes/sidebar.jade
+    #content.poem
+      .date !{prettydate}
+      h1 #{title}
+      if(preamble)
+        blockquote !{preamble}
+      !{contents}
+

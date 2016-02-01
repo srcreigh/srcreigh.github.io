@@ -1,5 +1,5 @@
 ---
-template: post.jade
+template: poem.jade
 title: Shayla
 date: 2015-12-16
 prettydate: December 16, 2015

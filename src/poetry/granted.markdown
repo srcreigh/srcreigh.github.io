@@ -1,5 +1,5 @@
 ---
-template: post.jade
+template: poem.jade
 title: Granted
 date: 2016-01-30
 prettydate: January 30, 2016
