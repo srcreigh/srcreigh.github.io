@@ -2,3 +2,4 @@ node_modules/
 build/
 .*.s??
 **/npm-debug.log
+**/.DS_Store

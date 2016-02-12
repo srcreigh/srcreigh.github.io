@@ -120,6 +120,10 @@ body {
   line-height: 1.3em;
 }
 
+#content hr {
+  margin-top: 1.25em;
+}
+
 #content blockquote p:first-child {
   padding-top: 0;
 }
