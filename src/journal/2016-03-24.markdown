@@ -1,0 +1,38 @@
+---
+template: post.jade
+date: 2016-03-24
+prettydate: March 24, 2016
+title: Eighteen Business Ideas
+---
+
+I study computer science and philosophy at the University of Waterloo. More than
+fifty thousand UW and Laurier students study here on University Ave. Computer
+science and engineering students here have a lot of money. They don't know what
+to do with it yet. Arts and business students here have a lot of time. They
+don't know what to do with it yet.
+
+Here are eighteen business ideas.
+
+1. Gamified litter cleanup
+2. Fashion advising consultancy
+3. Tutoring platform where tutors' reward is studying for their final instead of
+   money
+4. On-demand (< 1 hr) cleaning service
+5. Community-powered math and programming problem marking platform
+6. Videocasting (a la Twitch.tv) for Android phones
+7. Omnipresent app text translation for Android phones
+8. Messaging app conversation sharing platform
+9. Safe, social anxiety free, impromptu event planning and notification platform
+10. Programming storytelling platform (think fmylife.com, but the stories are
+    programs)
+11. Platform to convert emails / IMs into to do list items
+12. To do list with how to guides and next steps advising
+13. Service to determine which app a screenshot is of
+14. Tool to automatically search stack overflow with compiler errors
+15. Mobile Chaturbate + Yik Yak + Snapchat face masks
+16. Scrape twitter to match consultants with people who are stuck or frustrated
+17. Instagram for music: beats, chords, autotune
+18. Reddit with PageRanked votes
+
+Contact me via [Facebook](https://fb.com/srcreigh).
+
