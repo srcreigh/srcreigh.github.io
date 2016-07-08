@@ -19,7 +19,8 @@ Here are eighteen business ideas.
    money
 4. On-demand (< 1 hr) cleaning service
 5. Community-powered math and programming problem marking platform
-6. Videocasting (a la Twitch.tv) for Android phones
+6. <strike>Videocasting (a la Twitch.tv) for Android phones</strike> (*this idea
+   wasn't mine*)
 7. Omnipresent app text translation for Android phones
 8. Messaging app conversation sharing platform
 9. Safe, social anxiety free, impromptu event planning and notification platform
