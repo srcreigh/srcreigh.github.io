@@ -85,8 +85,23 @@ body {
   padding-right: 0.75em;
 }
 
+/* some poems override this with a style tag. ex. spenny */
 #content.poem {
   width: 45ch;
+}
+
+#content .long {
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-top: 0em;
+}
+
+#content .long + p {
+  padding-top: 0em;
+}
+
+#content p.indent {
+  padding-top: 0.5em;
 }
 
 #content ul {
