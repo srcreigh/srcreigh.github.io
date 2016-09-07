@@ -13,7 +13,8 @@ html
   body
     include includes/sidebar.jade
     #content
-      .date !{prettydate}
+      if(prettydate)
+        .date !{prettydate}
       h1 #{title}
       if(preamble)
         blockquote !{preamble}
