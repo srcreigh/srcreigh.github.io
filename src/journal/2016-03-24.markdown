@@ -30,10 +30,9 @@ Here are eighteen business ideas.
 12. To do list with how to guides and next steps advising
 13. Service to determine which app a screenshot is of
 14. Tool to automatically search stack overflow with compiler errors
-15. Mobile Chaturbate + Yik Yak + Snapchat face masks
-16. Scrape twitter to match consultants with people who are stuck or frustrated
-17. Instagram for music: beats, chords, autotune
-18. Reddit with PageRanked votes
+15. Scrape twitter to match consultants with people who are stuck or frustrated
+16. Instagram for music: beats, chords, autotune
+17. Reddit with PageRanked votes
 
 Contact me via [Facebook](https://fb.com/srcreigh).
 
