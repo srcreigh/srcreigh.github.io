@@ -12,3 +12,7 @@ You were raw and I've cooked you
 You were rare and I've cooked you more  
 Well done and I am going to sleep  
 Scavenger hunts to find the clues for these things
+
+<hr/>
+
+[Some analysis](https://www.facebook.com/srcreigh/posts/997431180369642)
