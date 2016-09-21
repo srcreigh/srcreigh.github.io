@@ -30,3 +30,7 @@ for a sketch in a book for sketches by drunks,
 but to be honest, honestly,  
 I wish he'd not drawn in the coloring book  
 where I said my friend was, at least.
+
+<hr/>
+
+<a href="/img/hes-already-there.png">"He's already there!"</a>
