@@ -15,8 +15,12 @@ html
     #content
       h1 Journal
       for entry in journal
-        h2
-          a(href='/#{entry.path}') #{entry.title}
+        if(entry.redirect)
+          h2
+            a(href='#{entry.redirect}') #{entry.title}
+        else
+          h2
+            a(href='/#{entry.path}') #{entry.title}
         .subtitle #{entry.prettydate}
 
 
