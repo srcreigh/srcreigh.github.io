@@ -1,0 +1,32 @@
+---
+template: post.jade
+title: Thoughts
+date: 2015-11-06
+prettydate: November 6, 2015
+---
+
+What, if any, is the value in being wrong? First it must be established what
+"wrong" is, in the first place. It is easy to be wrong about "external" things;
+things outside of our own mind. "The rock will fall," one could say... and be
+wrong when, after throwing it up, finds that it has gotten stuck in a tree. We
+can make claims "internal" (and thus easier to defend) by qualifying them with
+"I think," or "I feel." What makes these qualifications so truth-granting? It
+might be that nobody has the ability to see into another's experience. Lying is
+when some truth is believed yet the opposite is communicated; but how can claims
+about one's own experience ever be called into question? We can only appeal to
+the very same one for evidence that what was thought or felt isn't actually so;
+yet that second inquiry deserves a third inquiry, and so on. ("I think I thought
+that...") Such qualifications can also be used to communicate uncertainty; where
+claiming "X" is to say "I am certain that X," claiming "I think that X" is to
+say "I am not entirely certain about X." So what does it mean to be certain of
+something? Perhaps one has some evidence, or some evidence as well as some
+method for interpreting evidence. (It would seem that evidence is, after all,
+just information with an interpretation.) Perhaps certainty is a construction.
+"My construction exists; look, it is right here." Ideological constructions seem
+to have the property of multiplicity: what has been conceived may have
+consequences that we do not immediately understand. Truth about "nature" seems
+to reveal itself over time; ideological constructions may not reveal themselves
+at all. What is the process by which the consequences of an ideological
+construction reveal themselves? The rock falls in front of our eyes to show us
+gravity; but what happens to the natural numbers to show us that the sum of them
+up to and including n is n(n+1)/2? Perhaps argument, or "proofs"...
