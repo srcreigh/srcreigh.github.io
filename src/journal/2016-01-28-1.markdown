@@ -1,7 +1,7 @@
 ---
 template: post.jade
 title: Learning is Stressful, Martha Nussbaum is Good, and Help Me
-date: 2016-01-28-1
+date: 2016-01-28
 prettydate: January 1, 2016
 ---
 

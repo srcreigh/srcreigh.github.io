@@ -1,0 +1,61 @@
+---
+template: post.jade
+title: Notes from the side projects talk
+date: 2016-11-23
+prettydate: November 23, 2016
+---
+
+Side projects reveal a lot about a person. Do you do them to learn? To make
+money? To meet people? To boost your resume? Do you do short projects, or
+6&ndash;12 month ones, or longer? Alone, or with a partner, or with a large
+team?
+
+I gave a short talk about side projects tonight to an audience of first-year
+Computer Science students at the University of Waterloo. Here are my notes.
+
+<hr />
+
+- Who am I?
+  - Shane Creighton-Young
+  - Internships
+    - Google, LinkedIn
+    - Small and large startups
+  - Currently at velocity
+
+- What is a side project?
+  - "Side"
+    - Not a "main" project; something in addition to work and school
+  - "Project"
+    - Something "carefully planned" and "designed to achieve a particular aim"
+    - Root: "throw forth"
+
+- Why would you do a project?
+  - Nathaniel said:
+    - Learning
+    - Boosting your resume
+  - But also:
+    - Making money
+    - Meeting new people
+    - See what you like vs don't like
+    - Learn what you CAN'T do
+
+- What side projects have I done?
+  - [CS 253 on Udacity](https://www.udacity.com/course/web-development--cs253)
+  - [Hack the North](www.hackthenorth.com)
+  - [QKSMS](https://play.google.com/store/apps/details?id=com.moez.QKSMS&hl=en)
+
+- When to do side projects?
+  - Hackathons
+  - Christmas break
+  - When you get home from work on ur first co-op
+
+- Tips
+  - Don't learn too many things at once
+    - Build upon what you know
+  - Come up with an actual thing to build, don't just "learn the language"
+    - Like Nathaniel, who made a runescape bot and a note manager
+    - That's why the cs 253 was a good course --- there's a project at the end of it
+  - Talk about your projects to lots of people and ask for feedback
+    - This is good for learning and for meeting people
+    - Share to Facebook (i.e. Hackathon Hackers, frosh groups)
+
