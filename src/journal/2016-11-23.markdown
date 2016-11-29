@@ -1,6 +1,6 @@
 ---
 template: post.jade
-title: Notes from the side projects talk
+title: Side Projects Talk Notes
 date: 2016-11-23
 prettydate: November 23, 2016
 ---
