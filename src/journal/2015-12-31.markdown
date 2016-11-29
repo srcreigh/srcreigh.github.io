@@ -1,0 +1,8 @@
+---
+template: post.jade
+title: New Year's Resolutions
+date: 2015-12-31
+prettydate: December 31, 2015
+redirect: "https://www.facebook.com/srcreigh/posts/846092225503539"
+---
+

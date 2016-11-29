@@ -1,0 +1,7 @@
+---
+template: post.jade
+title: Structured Language for Logistics
+date: 2015-12-29
+prettydate: December 29, 2015
+redirect: "https://www.facebook.com/srcreigh/posts/844737675638994"
+---
