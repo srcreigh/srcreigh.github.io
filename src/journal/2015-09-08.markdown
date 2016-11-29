@@ -1,0 +1,8 @@
+---
+template: post.jade
+title: "How can one defend philosophy?"
+date: 2015-09-08
+prettydate: September 8, 2015
+redirect: "https://www.reddit.com/r/askphilosophy/comments/3k1ntk/how_can_one_defend_philosophy/cuu50v2/"
+---
+
