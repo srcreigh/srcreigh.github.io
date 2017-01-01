@@ -1,0 +1,8 @@
+---
+template: post.jade
+title: Confidence
+date: 2015-12-22
+prettydate: December 22, 2015
+redirect: "https://www.facebook.com/srcreigh/posts/840900796022682"
+---
+

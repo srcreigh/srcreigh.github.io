@@ -1,0 +1,8 @@
+---
+template: post.jade
+title: How do I choose what I do with my life?
+date: 2015-12-20
+prettydate: December 20, 2015
+redirect: "https://www.facebook.com/srcreigh/posts/839532609492834"
+---
+

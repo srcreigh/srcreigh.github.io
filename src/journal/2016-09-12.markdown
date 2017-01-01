@@ -1,0 +1,8 @@
+---
+template: post.jade
+title: '"Fact" vs "factitious"'
+date: 2016-07-12
+prettydate: July 12, 2016
+redirect: "https://www.facebook.com/srcreigh/posts/962537453859015"
+---
+

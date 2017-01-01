@@ -1,0 +1,8 @@
+---
+template: post.jade
+title: Thinking about plans
+date: 2016-08-23
+prettydate: August 23, 2016
+redirect: "https://www.facebook.com/srcreigh/posts/994697463976347"
+---
+

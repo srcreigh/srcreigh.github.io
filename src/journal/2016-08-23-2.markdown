@@ -1,0 +1,8 @@
+---
+template: post.jade
+title: Failure is good because that's how you learn
+date: 2016-08-23
+prettydate: August 23, 2016
+redirect: "https://www.facebook.com/srcreigh/posts/846092225503539"
+---
+
