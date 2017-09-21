@@ -1,0 +1,184 @@
+
+
+/* SHARED RULES */
+h1, h2, h3 {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h1 {
+  padding-top: 3em;
+}
+
+h2, h3 {
+  padding-top: 1.5em;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  font-size: 22px;
+}
+
+img {
+  width: 100%;
+}
+
+/* SIDEBAR RULES */
+
+#sidebar {
+  float: left;
+  width: 10em;
+  margin-left: 3em;
+}
+
+#sidebar h1 a {
+  text-decoration: none;
+}
+
+#sidebar li, #sidebar ol {
+  padding-top: 0.5em;
+}
+
+#sidebar h1 + ol {
+  padding-top: 0;
+}
+
+#sidebar a, #sidebar a:visited, #sidebar a:hover, #sidebar a:active {
+  color: inherit;
+}
+
+/* CONTENT RULES */
+
+#content h1 + p, #content h2 + p, #content h1 + h2, #content h1 + blockquote,
+#content blockquote + p { 
+  padding-top: 0.5em;
+}
+
+#content strong {
+  font-weight: bold;
+}
+
+#content em {
+  font-style: italic;
+}
+
+#content code {
+  font-family: "Courier New", Courier, "Nimbus Mono L", monospace;
+}
+
+#content pre {
+  padding-top: 0.75em;
+  font-size: 0.8em;
+}
+
+#content li {
+  padding-top: 0.5em;
+}
+
+#content li:first-child {
+  padding-top: 0;
+}
+
+#content {
+  width: 35ch;
+  float: left;
+  padding-bottom: 3em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+/* some poems override this with a style tag. ex. spenny */
+#content.poem {
+  width: 45ch;
+}
+
+#content .long {
+  text-indent: -1em;
+  margin-left: 1em;
+  padding-top: 0em;
+}
+
+#content .long + p {
+  padding-top: 0em;
+}
+
+#content p.indent {
+  padding-top: 0.5em;
+}
+
+#content ul {
+  list-style-type: circle;
+  padding-left: 2em;
+}
+
+#content ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+}
+
+#content h1, #content h3 {
+  text-align: center;
+}
+
+#content p:first-child {
+  padding-top: 0.5em;
+}
+
+#content .small {
+  font-variant: small-caps;
+}
+
+#content .date + h1 {
+  padding-top: 0.5em;
+}
+
+#content p, #content blockquote, #content ol, #content ul {
+  padding-top: 0.75em;
+  line-height: 1.3em;
+}
+
+#content hr {
+  margin-top: 1.25em;
+}
+
+#content blockquote p:first-child {
+  padding-top: 0;
+}
+
+#content .subtitle {
+  font-style: italic;
+  padding-top: 0.5em;
+}
+
+#content .date {
+  font-style: italic;
+  text-align: right;
+  padding-top: 3em;
+}
+
+#content blockquote {
+  font-style: italic;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#content blockquote em {
+  font-style: normal;
+}
+
+sub, sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.3em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
