@@ -14,6 +14,9 @@ html
     include includes/sidebar.jade
     #content
       h1 Essays
-      p There is nothing here yet.
+      for x in essays
+        h2
+          a(href='/#{x.path}') #{x.title}
+        .subtitle #{x.prettydate}
 
 
