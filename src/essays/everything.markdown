@@ -12,8 +12,8 @@ and when it comes to the question of whether or not we could ever be right, that
 understand everything, you will always *object* and say, &ldquo;but how could you possibly
 understand the past, where all is lost;&rdquo; you might say &ldquo;reality is too vast and complex
 to be understood by any single person,&rdquo; or &ldquo;how could I, terrible, and stupid and bad at
-everything as I am, be progressing in a positive direction?&rdquo;&mdash;and to be honest, it is
-only your venture to discover all the bad sense in these objections. Why would a terrible stupid
+everything as I am, be progressing in such a positive direction?&rdquo;&mdash;and to be honest, it
+is only your venture to discover all the bad sense in these objections. Why would a terrible stupid
 person be good at understanding everything? Well, maybe the popular conception of
 &ldquo;everything&rdquo; includes a lot of trick puzzles that aren't worth the time to solve again;
 and your &ldquo;stupidity&rdquo; is actually an intelligent refusal to participate *again*, to
